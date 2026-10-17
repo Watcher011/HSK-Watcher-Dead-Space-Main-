@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <JobDef>
+    <defName>HSK_InfectCorpse</defName>
+    <driverClass>HSK.Watcher.DeadSpace.JobDriver_InfectCorpse</driverClass>
+    <reportString>infecting TargetA.</reportString>
+  </JobDef>
+ <JobDef>
+    <defName>HSK_StudyBlackMarker</defName>
+    <driverClass>HSK.Watcher.DeadSpace.JobDriver_StudyBlackMarker</driverClass>
+    <reportString>studying TargetA.</reportString>
+    <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+  </JobDef>
+ 
+</Defs>

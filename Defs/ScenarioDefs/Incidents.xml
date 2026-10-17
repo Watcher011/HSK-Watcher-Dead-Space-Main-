@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<IncidentDef>
+    <defName>HSK_MarkerImpact</defName>
+    <label>marker impact</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>HSK.Watcher.DeadSpace.IncidentWorker_MarkerImpact</workerClass>
+    <baseChance>1.0</baseChance>
+    <earliestDay>20</earliestDay>
+    <letterLabel>Marker impact</letterLabel>
+    <letterText>Something fell from the sky. A blinding flash, a shockwave, and when the dust settled, a black obelisk was standing where the explosion had been. It does not look like anything built by human hands.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+  </IncidentDef>
+  
+  <IncidentDef>
+    <defName>HSK_InfectorOutbreak</defName>
+    <label>infector outbreak</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>HSK.Watcher.DeadSpace.IncidentWorker_InfectorOutbreak</workerClass>
+    <baseChance>0.4</baseChance>
+    <minRefireDays>15</minRefireDays>
+    <letterLabel>Infector outbreak</letterLabel>
+    <letterText>The marker's signal has reached the dead. Where the corpses lie together, the ground has split and thin, long-limbed creatures are crawling out. They are looking for bodies to continue.\n\nAn obelisk sculpture standing in the colony would have drowned out the signal.</letterText>
+      <letterDef>NegativeEvent</letterDef>
+  </IncidentDef>
+</Defs>

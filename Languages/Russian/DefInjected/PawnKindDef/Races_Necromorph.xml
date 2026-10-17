@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Necromorphe.label>Necromorphe</Necromorphe.label>
+  <Necromorphe.labelPlural>Necromorphes</Necromorphe.labelPlural>
+  <Necromorphe.labelMale>male Necromorphe</Necromorphe.labelMale>
+  <Necromorphe.labelMalePlural>male Necromorphes</Necromorphe.labelMalePlural>
+  <Necromorphe.labelFemale>female Necromorphe</Necromorphe.labelFemale>
+  <Necromorphe.labelFemalePlural>female Necromorphes</Necromorphe.labelFemalePlural>
+
+  <Infector.label>Infector</Infector.label>
+  <Infector.labelPlural>Infectors</Infector.labelPlural>
+  <Infector.labelMale>male Infector</Infector.labelMale>
+  <Infector.labelMalePlural>male Infectors</Infector.labelMalePlural>
+  <Infector.labelFemale>female Infector</Infector.labelFemale>
+  <Infector.labelFemalePlural>female Infectors</Infector.labelFemalePlural>
+
+  <Lurker.label>Lurker</Lurker.label>
+  <Lurker.labelPlural>Lurkers</Lurker.labelPlural>
+  <Lurker.labelMale>male Lurker</Lurker.labelMale>
+  <Lurker.labelMalePlural>male Lurkers</Lurker.labelMalePlural>
+  <Lurker.labelFemale>female Lurker</Lurker.labelFemale>
+  <Lurker.labelFemalePlural>female Lurkers</Lurker.labelFemalePlural>
+
+
+  <!--<Некроморф.label>Некроморф</Некроморф.label>-->
+  <!--<Некроморф.labelPlural>Некроморфы</Некроморф.labelPlural>-->
+  <!--<Некроморф.labelMale>Некроморф</Некроморф.labelMale>-->
+  <!--<Некроморф.labelMalePlural>Некроморфы</Некроморф.labelMalePlural>-->
+  <!--<Некроморф.labelFemale>Некроморфка</Некроморф.labelFemale>-->
+  <!--<Некроморф.labelFemalePlural>Некроморфки</Некроморф.labelFemalePlural>-->
+  <!--<Инфектор.label>Инфектор</Инфектор.label>-->
+  <!--<Инфектор.labelPlural>Инфекторы</Инфектор.labelPlural>-->
+  <!--<Инфектор.labelMale>Инфектор</Инфектор.labelMale>-->
+  <!--<Инфектор.labelMalePlural>Инфекторы</Инфектор.labelMalePlural>-->
+  <!--<Инфектор.labelFemale>Инфекторка</Инфектор.labelFemale>-->
+  <!--<Инфектор.labelFemalePlural>Инфекторки</Инфектор.labelFemalePlural>-->
+  <!--<Скрытень.label>Скрытень</Скрытень.label>-->
+  <!--<Скрытень.labelPlural>Скрытни</Скрытень.labelPlural>-->
+  <!--<Скрытень.labelMale>Скрытень</Скрытень.labelMale>-->
+  <!--<Скрытень.labelMalePlural>Скрытни</Скрытень.labelMalePlural>-->
+  <!--<Скрытень.labelFemale>Скрытница</Скрытень.labelFemale>-->
+  <!--<Скрытень.labelFemalePlural>Скрытницы</Скрытень.labelFemalePlural>-->
+
+</LanguageData>

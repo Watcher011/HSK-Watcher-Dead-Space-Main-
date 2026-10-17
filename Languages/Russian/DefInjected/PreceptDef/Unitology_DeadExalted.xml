@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HSK_Unitology_DeadExalted.label>возвышенные мёртвые</HSK_Unitology_DeadExalted.label>
+  <HSK_Unitology_DeadExalted.description>Мёртвые первыми обретают целостность. Последователи утешаются трупами и могилами рядом и не чувствуют ужаса при виде их.</HSK_Unitology_DeadExalted.description>
+
+
+  <!-- Frequent conversion -->
+
+  <HSK_Unitology_Convergence.label>нести слово</HSK_Unitology_Convergence.label>
+  <HSK_Unitology_Convergence.description>Каждая душа должна услышать сигнал. Последователи проповедуют постоянно, и их слова гораздо убедительнее. Рядом с изученным Маркером их рвение ещё сильнее.</HSK_Unitology_Convergence.description>
+
+<HSK_IdeoBuilding_Marker.label>алтарь Маркера</HSK_IdeoBuilding_Marker.label>
+<HSK_IdeoBuilding_Marker.description>Сооружение идеорелигиозного значения: уменьшенная копия Чёрного Маркера. Возводить его дозволено лишь юнитологам. Может служить средоточием для ритуалов.</HSK_IdeoBuilding_Marker.description>
+
+
+</LanguageData>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HSK_InfectorCorpseRises>Труп {0} заражён. Он восстал некроморфом — и надежды больше нет.</HSK_InfectorCorpseRises>
+ 
+  <HSK_InfectorAnimalCorpseRises>Труп {0} заражён. Он восстал притаившимся — и теперь оно ждёт в темноте.</HSK_InfectorAnimalCorpseRises>
+  <HSK_MarkerStudyLabel>Изучить</HSK_MarkerStudyLabel>
+  <HSK_MarkerStudyDesc>Разрешить колонистам изучать этот маркер. Полностью изученный маркер становится красным и даёт гораздо больше энергии.</HSK_MarkerStudyDesc>
+
+
+  <HSK_MarkerInspectProgress>Прогресс изучения: {0}</HSK_MarkerInspectProgress>
+  <HSK_MarkerInspectStudied>Полностью изучен</HSK_MarkerInspectStudied>
+
+
+  <HSK_MarkerStudied>{0} закончил(а) изучать маркер. Его поверхность теперь светится красным.</HSK_MarkerStudied>
+
+  <HSK_MarkerFascinated>{0} притягивает чёрный маркер, и он(а) идёт его изучать.</HSK_MarkerFascinated>
+
+  
+  
+  
+   <HSK_MarkerOfferLabel>Принимать трупы</HSK_MarkerOfferLabel>
+  <HSK_MarkerOfferDesc>Разрешить маркеру поглощать корнями трупы людей и животных, лежащие рядом. Каждый труп заполняет шкалу вознесения: на порогах из маркера выходят некроморфы, а полная шкала вызывает Единение.</HSK_MarkerOfferDesc>
+ 
+  <HSK_MarkerCorpseZoneLabel>Зона трупов</HSK_MarkerCorpseZoneLabel>
+  <HSK_MarkerCorpseZoneDesc>Создать зону хранения трупов на свободных клетках вокруг маркера. Колонисты будут стаскивать туда трупы, а корни маркера поглотят их.</HSK_MarkerCorpseZoneDesc>
+  <HSK_MarkerCorpseZoneNoRoom>Вокруг маркера нет свободных клеток для зоны.</HSK_MarkerCorpseZoneNoRoom>
+  <HSK_MarkerConsuming>Корни поглощают трупы.</HSK_MarkerConsuming>
+ 
+  <HSK_MarkerAscensionInspect>Вознесение: {0} / {1} ({2})</HSK_MarkerAscensionInspect>
+  <HSK_MarkerAscensionUnity>Единение свершилось</HSK_MarkerAscensionUnity>
+ 
+  <HSK_MarkerWaveLabel>Маркер отзывается</HSK_MarkerWaveLabel>
+  <HSK_MarkerWaveText>Мёртвые, отданные маркеру, не ушли. Вокруг него шевелится тьма: наружу выходят существа ({0}).</HSK_MarkerWaveText>
+ 
+  <HSK_MarkerUnityLabel>Единение</HSK_MarkerUnityLabel>
+  <HSK_MarkerUnityText>Шкала полна. Маркер раскрывается, и всё, что было людьми и зверями, возвращается разом ({0}). Конвергенция началась.</HSK_MarkerUnityText>
+</LanguageData>

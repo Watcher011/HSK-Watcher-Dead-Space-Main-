@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThinkTreeDef>
+		<defName>HSK_InfectorMain</defName>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="HSK.Watcher.DeadSpace.JobGiver_InfectCorpse">
+					<priority>5</priority>
+				</li>
+				<li Class="JobGiver_AIFightEnemies">
+					<targetAcquireRadius>8</targetAcquireRadius>
+					<targetKeepRadius>10</targetKeepRadius>
+				</li>
+				<li Class="HSK.Watcher.DeadSpace.JobGiver_InfectorIdle"/>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+	<ThinkTreeDef>
+		<defName>HSK_NecromorphMain</defName>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="HSK.Watcher.DeadSpace.JobGiver_NecromorphHunt">
+					<priority>6</priority>
+				</li>
+				<li Class="JobGiver_AIFightEnemies">
+					<targetAcquireRadius>8</targetAcquireRadius>
+					<targetKeepRadius>10</targetKeepRadius>
+				</li>
+				<li Class="HSK.Watcher.DeadSpace.JobGiver_InfectorIdle"/>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+	
+	 <ThinkTreeDef>
+    <defName>HSK_LurkerMain</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="HSK.Watcher.DeadSpace.JobGiver_LurkerHunt">
+          <ability>SpikeLaunch_Fingerspike</ability>
+        </li>
+        <li Class="JobGiver_AIFightEnemies">
+          <targetAcquireRadius>25</targetAcquireRadius>
+          <targetKeepRadius>30</targetKeepRadius>
+        </li>
+        <li Class="HSK.Watcher.DeadSpace.JobGiver_InfectorIdle" />
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+</Defs>

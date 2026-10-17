@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <EffecterDef>
+    <defName>HSK_MarkerFeed</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>ObeliskActionDarkHighlightRing</fleckDef>
+        <chancePerTick>1</chancePerTick>
+        <chancePeriodTicks>30</chancePeriodTicks>
+        <burstCount>1~1</burstCount>
+        <scale>1.2</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>EnergyCrackle</fleckDef>
+        <chancePerTick>.08</chancePerTick>
+        <chancePeriodTicks>15</chancePeriodTicks>
+        <positionRadius>3</positionRadius>
+        <burstCount>1~3</burstCount>
+        <scale>.15~.25</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+ 
+  <!-- Фон: редкие разряды вокруг маркера, когда шкала вознесения заполнена на четверть и больше. -->
+  <EffecterDef>
+    <defName>HSK_MarkerAura</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>EnergyCrackle</fleckDef>
+        <chancePerTick>.03</chancePerTick>
+        <chancePeriodTicks>15</chancePeriodTicks>
+        <positionRadius>2</positionRadius>
+        <burstCount>1~2</burstCount>
+        <scale>.15~.23</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+ 
+  <!-- Заряженный маркер (шкала от двух третей): частые разряды шире и медленное тёмное кольцо. -->
+  <EffecterDef>
+    <defName>HSK_MarkerCharged</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>EnergyCrackle</fleckDef>
+        <chancePerTick>.07</chancePerTick>
+        <chancePeriodTicks>15</chancePeriodTicks>
+        <positionRadius>3</positionRadius>
+        <burstCount>1~4</burstCount>
+        <scale>.18~.3</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>ObeliskActionDarkHighlightRing</fleckDef>
+        <chancePerTick>1</chancePerTick>
+        <chancePeriodTicks>90</chancePeriodTicks>
+        <burstCount>1~1</burstCount>
+        <scale>.8</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+ 
+  <!-- Вспышка на пороге волны: искры и электрический треск. -->
+  <EffecterDef>
+    <defName>HSK_MarkerWaveFlash</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        <soundDef>Explosion_EMP</soundDef>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>Mote_SparkSimple</moteDef>
+        <positionRadius>3</positionRadius>
+        <burstCount>4~7</burstCount>
+        <scale>1</scale>
+        <rotation>-150~-150</rotation>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+ 
+  <!-- Единение: сильные разряды и пульсирующая волна искажения вокруг маркера. -->
+  <EffecterDef>
+    <defName>HSK_MarkerUnity</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>EnergyCrackle</fleckDef>
+        <chancePerTick>.2</chancePerTick>
+        <chancePeriodTicks>10</chancePeriodTicks>
+        <positionRadius>4</positionRadius>
+        <burstCount>2~6</burstCount>
+        <scale>.2~.35</scale>
+        <spawnLocType>OnSource</spawnLocType>
+        <soundDef>Pawn_Nociosphere_Arc</soundDef>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0</positionRadius>
+        <moteDef>Mote_ObeliskExplosionWarmupArea</moteDef>
+        <burstCount>1</burstCount>
+        <scale>1.5</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+  
+</Defs>

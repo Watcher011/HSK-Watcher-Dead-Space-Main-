@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Marker building -->
+
+  <HSK_BlackMarker.label>Обелиск</HSK_BlackMarker.label>
+  <HSK_BlackMarker.description>фывапролджэЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮqwertyuiopasdfghjklzxcvbnm1234567890!@#$%^*()_+-=[]{}|;:'",./?`~ ЕДИНЕНИЕ фывапролджэЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮqwertyuiopasdfghjklzxcvbnm1234567890!@#$%^*()_+-=[]{}|;:'",./?`~ ВОСХОЖДЕНИЕ фывапролджэЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮqwertyuiopasdfghjklzxcvbnm1234567890!@#$%^*()_+-=[]{}|;:'",./?`~ СЛИЯНИЕ фывапролджэЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮqwertyuiopasdfghjklzxcvbnm1234567890!@#$%^*()_+-=[]{}|;:'",./?`~ БЕССМЕРТИЕ фывапролджэЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮqwertyuiopasdfghjklzxcvbnm1234567890!@#$%^*()_+-=[]{}|;:'",./?`~ ПУТЬ фывапролджэЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮqwertyuiopasdfghjklzxcvbnm1234567890!@#$%^*()_+-=[]{}|;:'",./?`~ ЦЕЛОЕ фывапролджэЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮqwertyuiopasdfghjklzxcvbnm1234567890!@#$%^*()_+-=[]{}|;:'",./?`~ ЖИЗНЬ фывапролджэЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮqwertyuiopasdfghjklzxcvbnm1234567890!@#$%^*()_+-=[]{}|;:'",./?`~.</HSK_BlackMarker.description>
+
+  <HSK_ObeliskSculpture.label>Скульптура-обелиск</HSK_ObeliskSculpture.label>
+  <HSK_ObeliskSculpture.description>Небольшая скульптурная копия Чёрного Маркера. Люди, живущие рядом с таким подобием, перестают слышать сигнал Маркера. Пока эта скульптура стоит в колонии, мёртвые останутся мёртвыми.Но это не точно.</HSK_ObeliskSculpture.description>
+
+  <HSK_Altar_MarkerSmall.label>малый алтарь Маркера</HSK_Altar_MarkerSmall.label>
+  <HSK_Altar_MarkerSmall.description>Миниатюрный чёрный Маркер, средоточие ритуалов юнитологов. Только последователи юнитологии могут его построить.</HSK_Altar_MarkerSmall.description>
+
+
+</LanguageData>

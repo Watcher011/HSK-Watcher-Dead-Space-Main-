@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+   
+    <MentalStateDef>
+    <defName>HSK_MarkerObsession</defName>
+    <label>marker obsession</label>
+    <stateClass>MentalState</stateClass>
+    <workerClass>HSK.Watcher.DeadSpace.MentalStateWorker_MarkerObsession</workerClass>
+    <category>Misc</category>
+    <minTicksBeforeRecovery>6000</minTicksBeforeRecovery>
+    <maxTicksBeforeRecovery>25000</maxTicksBeforeRecovery>
+    <recoveryMtbDays>0.2</recoveryMtbDays>
+    <beginLetterLabel>marker obsession</beginLetterLabel>
+    <beginLetter>{0} cannot take their eyes off the marker. They will study it nonstop, ignoring everything else, until the secret is revealed or the obsession passes.</beginLetter>
+    <beginLetterDef>NegativeEvent</beginLetterDef>
+    <recoveryMessage>{0} is no longer obsessed with the marker.</recoveryMessage>
+    <baseInspectLine>Mental state: marker obsession</baseInspectLine>
+  </MentalStateDef>
+ 
+  <MentalBreakDef>
+    <defName>HSK_MarkerObsessionBreak</defName>
+    <mentalState>HSK_MarkerObsession</mentalState>
+    <workerClass>HSK.Watcher.DeadSpace.MentalBreakWorker_MarkerObsession</workerClass>
+    <baseCommonality>0.5</baseCommonality>
+    <intensity>Minor</intensity>
+  </MentalBreakDef>
+</Defs>

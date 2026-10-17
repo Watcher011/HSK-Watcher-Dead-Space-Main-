@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HSK_Unitology.label>юнитология</HSK_Unitology.label>
+  <HSK_Unitology.description>Конвергенция — конец всякой дороги. Мёртвые не потеряны: они первыми слышат сигнал Маркера и обретают целостность. Последователи почитают трупы, стекаются к чёрному Маркеру и проповедуют без устали.</HSK_Unitology.description>
+  <HSK_Unitology.generalRules.rulesStrings.0>memeAdjective-&gt;юнитологический</HSK_Unitology.generalRules.rulesStrings.0>
+  <HSK_Unitology.generalRules.rulesStrings.1>memeAdjective-&gt;конвергентный</HSK_Unitology.generalRules.rulesStrings.1>
+  <HSK_Unitology.generalRules.rulesStrings.2>memeConcept-&gt;конвергенция</HSK_Unitology.generalRules.rulesStrings.2>
+  <HSK_Unitology.generalRules.rulesStrings.3>memeConcept-&gt;Маркер</HSK_Unitology.generalRules.rulesStrings.3>
+  <HSK_Unitology.generalRules.rulesStrings.4>memeConcept-&gt;сигнал</HSK_Unitology.generalRules.rulesStrings.4>
+  <HSK_Unitology.generalRules.rulesStrings.5>memeMoralist-&gt;юнитологист</HSK_Unitology.generalRules.rulesStrings.5>
+
+
+</LanguageData>

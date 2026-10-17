@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThinkTreeDef[defName="MentalStateNonCritical"]/thinkRoot/subNodes</xpath>
+    <order>Prepend</order>
+    <value>
+      <li Class="ThinkNode_ConditionalMentalState">
+        <state>HSK_MarkerObsession</state>
+        <subNodes>
+          <li Class="HSK.Watcher.DeadSpace.JobGiver_MarkerObsession" />
+        </subNodes>
+      </li>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ===== Marker building ===== -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>HSK_BlackMarker</defName>
+    <label>black marker</label>
+    <description>A towering black obelisk of unknown origin. Even unstudied, it hums with a steady current that any power grid can tap. A colonist who studies it long enough will awaken it: the surface turns red and the output grows tenfold.</description>
+    <thingClass>HSK.Watcher.DeadSpace.Building_BlackMarker</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Exotic/BlackMarker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 6)</drawSize>
+      <drawOffset>(0, 0, 2.25)</drawOffset>
+      <shadowData>
+        <volume>(0.9, 1.0, 0.9)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.5, 0.1, 5, 2.8)</rect>
+      </damageData>
+    </graphicData>
+    <size>(3, 2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <fillPercent>1</fillPercent>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <deconstructible>false</deconstructible>
+      	<ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <comps>
+      <li Class="HSK.Watcher.DeadSpace.CompProperties_PowerMarker">
+        <transmitsPower>true</transmitsPower>
+        <basePowerConsumption>-400</basePowerConsumption>
+        <studiedPowerOutput>4000</studiedPowerOutput>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="HSK.Watcher.DeadSpace.BlackMarkerExtension">
+        <studiedTexPath>Things/Building/Exotic/RedMarker</studiedTexPath>
+        <!-- 6000 = ~2.4 game hours of work at ResearchSpeed 1 -->
+        <studyWork>36000</studyWork>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  
+  
+  	<ThingDef ParentName="SculptureBase">
+		<defName>HSK_ObeliskSculpture</defName>
+		  <label>obelisk sculpture</label>
+    <description>A small sculpted replica of the black marker. People who live near such a likeness stop hearing the marker's signal. While this sculpture stands in the colony, the dead will stay dead.</description>
+		<uiIconPath>Things/Building/Art/ObeliskSculpture</uiIconPath>
+		<graphicData>
+			 <texPath>Things/Building/Art/ObeliskSculpture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<drawOffset>(0, 0, 0.6)</drawOffset>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>false</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<building>
+			<uninstallWork>150</uninstallWork>
+			 <isEdifice>false</isEdifice>
+		</building>
+		 <drawerType>MapMeshAndRealTime</drawerType>
+		  <clearBuildingArea>false</clearBuildingArea>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		 <passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<Beauty>70</Beauty>
+			<WorkToMake>36000</WorkToMake>
+			<Bulk>80</Bulk>
+			<Mass>50</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">48</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>170</costStuffCount>
+	</ThingDef>
+	
+
+  
+  	<ThingDef ParentName="AltarBase">
+		<defName>HSK_Altar_MarkerSmall</defName>
+    <label>small marker altar</label>
+    <description>A miniature black marker, a focus for unitologist rituals. Only those who follow unitology can build it.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			  <texPath>Things/Building/Exotic/BlackMarker</texPath>
+			 <drawSize>(1.5, 3)</drawSize>
+      <drawOffset>(0, 0, 1.1)</drawOffset>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<size>(1,1)</size>
+		<drawerType>RealtimeOnly</drawerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<castEdgeShadows>false</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>30000</WorkToBuild>
+			<Beauty>30</Beauty>
+			<StyleDominance>50</StyleDominance>
+			<Mass>100</Mass>
+			<Flammability>0.6</Flammability>
+		</statBases>
+		<fillPercent>0.25</fillPercent>
+		<passability>PassThroughOnly</passability>
+		<costStuffCount>140</costStuffCount>
+		<stuffCategories>
+			<li>Precious</li>
+			<li>Metallic</li>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<blockWind>true</blockWind>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<rotatable>false</rotatable>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<costList>
+			<Uranium>5</Uranium>
+		</costList>
+		<building>
+			<isInert>true</isInert>
+			<!--<ai_chillDestination>false</ai_chillDestination>-->
+		</building>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(154,205,50,1)</glowColor>
+			</li>
+			<!--<li Class="SK.CompProperties_ApplyHediffAround">
+				<hediff>DeathRefusal</hediff>
+				<radius>3</radius>
+				<severityToAdd>0.001</severityToAdd>
+			</li>-->
+		</comps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<interactionCellOffset>(0,0, -2)</interactionCellOffset>
+	</ThingDef>
+</Defs>

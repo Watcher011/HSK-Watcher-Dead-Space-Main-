@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<DutyDef>
+  <defName>HSK_NecromorphHunt</defName>
+  <hook>MediumPriority</hook>
+  <thinkNode Class="ThinkNode_Priority">
+    <subNodes>
+      <li Class="HSK.Watcher.DeadSpace.JobGiver_NecromorphHunt" />
+    </subNodes>
+  </thinkNode>
+</DutyDef>
+</Defs>

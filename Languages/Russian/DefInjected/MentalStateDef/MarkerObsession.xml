@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HSK_MarkerObsession.label>ОДЕРЖИМОСТЬ МАРКЕРОМ</HSK_MarkerObsession.label>
+  <HSK_MarkerObsession.beginLetter>{0} не в силах отвести взгляд от Маркера. Изучение будет продолжаться непрерывно, всё остальное отступит, пока тайна не будет раскрыта или одержимость не пройдёт.</HSK_MarkerObsession.beginLetter>
+  <HSK_MarkerObsession.beginLetterLabel>ОДЕРЖИМОСТЬ МАРКЕРОМ</HSK_MarkerObsession.beginLetterLabel>
+  <HSK_MarkerObsession.recoveryMessage>{0} больше не одержим Маркером.</HSK_MarkerObsession.recoveryMessage>
+  <HSK_MarkerObsession.baseInspectLine>Психическое состояние: одержимость Маркером</HSK_MarkerObsession.baseInspectLine>
+
+
+</LanguageData>

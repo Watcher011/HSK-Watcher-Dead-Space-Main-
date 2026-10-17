@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<IdeoColorDef>
+    <defName>HSK_UnitologyBlack</defName>
+    <colorDef>Black</colorDef>
+    <memes>
+      <li>HSK_Unitology</li>
+    </memes>
+  </IdeoColorDef>
+ 
+  <IdeoColorDef>
+    <defName>HSK_UnitologyRed</defName>
+    <colorDef>Red</colorDef>
+    <memes>
+      <li>HSK_Unitology</li>
+    </memes>
+  </IdeoColorDef>
+</Defs>

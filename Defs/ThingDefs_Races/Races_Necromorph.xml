@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseFleshbeast">
+		<defName>Necromorphe</defName>
+		<label>Necromorph</label>
+		<description>A corpse reanimated and twisted by the Marker's signal. Flesh fuses with bone, limbs split into jagged spikes, and the chest hardens into an armored carapace.\n\nIf its corpse is not dismembered quickly, it dissolves into a pool of infected flesh.</description>
+		<statBases>
+			<Flammability>2</Flammability>
+			<MoveSpeed>4.3</MoveSpeed>
+			<MinimumContainmentStrength>50</MinimumContainmentStrength>
+			<!-- CE: броня в мм RHA (острое) и МПа (тупое), а не в долях -->
+			<ArmorRating_Sharp>6</ArmorRating_Sharp>
+			<ArmorRating_Blunt>10</ArmorRating_Blunt>
+			<ToxicResistance>0.5</ToxicResistance>
+			<MeleeDodgeChance>0.8</MeleeDodgeChance>
+			<MeleeCritChance>0.6</MeleeCritChance>
+			<MeleeParryChance>0.2</MeleeParryChance>
+		</statBases>
+		<uiIconPath>Things/Pawn/Necromorphe/Necromorphe_MenuIcon</uiIconPath>
+		<race>
+			<body>Toughspike</body>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<lifeExpectancy>15</lifeExpectancy>
+			<renderTree>Toughspike</renderTree>
+			<thinkTreeMain>HSK_NecromorphMain</thinkTreeMain>
+			<thinkTreeConstant>FleshbeastConstant</thinkTreeConstant>
+			<canBecomeShambler>true</canBecomeShambler>
+			<lifeStageAges>
+				<li>
+					<def>FullyFormed_Toughspike</def>
+					<soundWounded>Pawn_Fleshbeast_Toughspike_Wounded</soundWounded>
+					<soundDeath>Pawn_Fleshbeast_Toughspike_Death</soundDeath>
+					<soundCall>Pawn_Fleshbeast_Toughspike_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_AttachPoints">
+				<points>
+					<li>
+						<offset>(-.35, 0, .5)</offset>
+						<type>PlatformRestraint0</type>
+					</li>
+					<li>
+						<offset>(.35, 0, .5)</offset>
+						<type>PlatformRestraint1</type>
+					</li>
+					<li>
+						<offset>(.3, 0, -.45)</offset>
+						<type>PlatformRestraint2</type>
+					</li>
+					<li>
+						<offset>(-.3, 0, -.45)</offset>
+						<type>PlatformRestraint3</type>
+					</li>
+				</points>
+			</li>
+			<li Class="CompProperties_ProducesBioferrite">
+				<bioferriteDensity>2</bioferriteDensity>
+			</li>
+		</comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>left spike</label>
+				<labelNoLocation>spike</labelNoLocation>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftSpike</linkedBodyPartsGroup>
+				<armorPenetrationSharp>1.5</armorPenetrationSharp>
+				<armorPenetrationBlunt>4</armorPenetrationBlunt>
+				<soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>right spike</label>
+				<labelNoLocation>spike</labelNoLocation>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightSpike</linkedBodyPartsGroup>
+				<armorPenetrationSharp>1.5</armorPenetrationSharp>
+				<armorPenetrationBlunt>4</armorPenetrationBlunt>
+				<soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>2</armorPenetrationBlunt>
+				<soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+			</li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef ParentName="BaseFleshbeastKind">
+		<defName>Necromorphe</defName>
+		<label>Necromorphe</label>
+		<race>Necromorphe</race>
+		<abilities>
+			<li>SludgeSpew</li>
+		</abilities>
+		<combatPower>70</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Necromorphe/Necromorphe</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Fleshbeast/Toughspike/Dessicated_Toughspike</texPath>
+					<drawSize>2</drawSize>
+					<attachPoints>
+						<li>
+							<offset>(-.3, 0, .45)</offset>
+							<type>PlatformRestraint0</type>
+						</li>
+						<li>
+							<offset>(.3, 0, .45)</offset>
+							<type>PlatformRestraint1</type>
+						</li>
+						<li>
+							<offset>(.17, 0, -.43)</offset>
+							<type>PlatformRestraint2</type>
+						</li>
+						<li>
+							<offset>(-.2, 0, -.45)</offset>
+							<type>PlatformRestraint3</type>
+						</li>
+					</attachPoints>
+				</dessicatedBodyGraphicData>
+				<silhouetteGraphicData>
+					<texPath>Things/Pawn/Necromorphe/Necromorphe_MenuIcon</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>2</drawSize>
+				</silhouetteGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="BaseFleshbeast">
+		<defName>Infector</defName>
+		<label>Infector</label>
+		<description>A necromorph born not to kill, but to continue. It does not hunt the living — it waits for them to become dead. Sliding through the dark on thin, unnaturally bent limbs, it finds fresh corpses, looms over the skull, and drives its proboscis into the base of the neck. Infected flesh is injected; bones break and fuse anew, skin stretches and splits, and a scream tears from the throat — a scream that no longer belongs to a human. A moment later, a new beast rises. And the Infector is already searching for the next corpse.\n\nKilling it is not enough. As long as there are dead, the infection will not stop.</description>
+		<statBases>
+			<MoveSpeed>5.1</MoveSpeed>
+			<MinimumContainmentStrength>20</MinimumContainmentStrength>
+			<ToxicResistance>0.5</ToxicResistance>
+			<!-- CE: броня в мм RHA (острое) и МПа (тупое) -->
+			<ArmorRating_Sharp>2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>3</ArmorRating_Blunt>
+			<MeleeDodgeChance>1.0</MeleeDodgeChance>
+			<MeleeCritChance>0.4</MeleeCritChance>
+			<MeleeParryChance>0.1</MeleeParryChance>
+		</statBases>
+		<uiIconPath>Things/Pawn/Infector/Infector_MenuIcon</uiIconPath>
+		<race>
+			<body>Fingerspike</body>
+			<baseBodySize>0.6</baseBodySize>
+			<baseHealthScale>0.5</baseHealthScale>
+			<lifeExpectancy>10</lifeExpectancy>
+			<renderTree>Misc</renderTree>
+			<thinkTreeMain>HSK_InfectorMain</thinkTreeMain>
+			<thinkTreeConstant>FleshbeastConstant</thinkTreeConstant>
+			<deathAction Class="DeathActionProperties_Vanish">
+				<workerClass>DeathActionWorker_Vanish</workerClass>
+				<filth>Filth_TwistedFlesh</filth>
+				<filthCountRange>1~3</filthCountRange>
+				<meatExplosionSize>Small</meatExplosionSize>
+			</deathAction>
+			<lifeStageAges>
+				<li>
+					<def>EntityFullyFormed</def>
+					<soundWounded>Pawn_Fleshbeast_Fingerspike_Wounded</soundWounded>
+					<soundDeath>Pawn_Fleshbeast_Fingerspike_Death</soundDeath>
+					<soundCall>Pawn_Fleshbeast_Fingerspike_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_AttachPoints">
+				<points>
+					<li>
+						<offset>(-.21, 0, .21)</offset>
+						<type>PlatformRestraint0</type>
+					</li>
+					<li>
+						<offset>(.21, 0, .21)</offset>
+						<type>PlatformRestraint1</type>
+					</li>
+					<li>
+						<offset>(.21, 0, -.21)</offset>
+						<type>PlatformRestraint2</type>
+					</li>
+					<li>
+						<offset>(-.21, 0, -.21)</offset>
+						<type>PlatformRestraint3</type>
+					</li>
+				</points>
+			</li>
+			<li Class="CompProperties_CanBeDormant">
+				<maxDistAwakenByOther>3</maxDistAwakenByOther>
+				<wakeUpDelayRange>100~200</wakeUpDelayRange>
+				<jobDormancy>true</jobDormancy>
+			</li>
+			<li Class="CompProperties_WakeUpDormant">
+				<wakeUpOnDamage>true</wakeUpOnDamage>
+				<wakeUpCheckRadius>4.9</wakeUpCheckRadius>
+				<wakeUpIfAnyTargetClose>true</wakeUpIfAnyTargetClose>
+				<wakeUpWithDelay>true</wakeUpWithDelay>
+				<activateMessageKey>MessageFingerspikeDisturbed</activateMessageKey>
+				<activatePluralMessageKey>MessageFingerspikeDisturbedPlural</activatePluralMessageKey>
+				<wakeUpTargetingParams>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<canTargetHumans>true</canTargetHumans>
+				</wakeUpTargetingParams>
+			</li>
+			<li Class="CompProperties_Studiable">
+				<frequencyTicks>120000</frequencyTicks>
+				<knowledgeCategory>Basic</knowledgeCategory>
+				<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+				<anomalyKnowledge>1</anomalyKnowledge>
+				<requiresHoldingPlatform>true</requiresHoldingPlatform>
+			</li>
+			<li Class="HSK.Watcher.DeadSpace.CompProperties_InfectorSeeker">
+				<checkIntervalTicks>150</checkIntervalTicks>
+				<infectTicks>240</infectTicks>
+				<necromorphKind>Necromorphe</necromorphKind>
+				<animalNecromorphKind>Lurker</animalNecromorphKind>
+				<!-- новая -->
+				<minAnimalBodySize>0.4</minAnimalBodySize>
+				<!-- новая -->
+			</li>
+			<li Class="CompProperties_ProducesBioferrite">
+				<bioferriteDensity>2</bioferriteDensity>
+			</li>
+		</comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>spike</label>
+				<labelNoLocation>spike</labelNoLocation>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>MiddleSpike</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<armorPenetrationSharp>1</armorPenetrationSharp>
+				<armorPenetrationBlunt>2</armorPenetrationBlunt>
+				<soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>1</armorPenetrationBlunt>
+				<soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+			</li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef ParentName="BaseFleshbeastKind">
+		<defName>Infector</defName>
+		<label>Infector</label>
+		<race>Infector</race>
+		<abilities>
+			<li>SpikeLaunch_Fingerspike</li>
+		</abilities>
+		<combatPower>25</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Infector/Infector</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+				<silhouetteGraphicData>
+					<texPath>Things/Pawn/Infector/Infector_MenuIcon</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>2</drawSize>
+				</silhouetteGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="BaseFleshbeast">
+		<defName>Lurker</defName>
+		<label>Lurker</label>
+		<description>A small, twisted necromorph that clings to the dark and keeps its distance. Thin tentacles fold out of its back and fire sharpened bone spikes at anything alive, then it slips away before the prey can close in. One spike is a nuisance; a dozen of them are a death sentence.\n\nIt rarely fights alone. Where one Lurker watches from the shadows, others are already taking aim.</description>
+		<statBases>
+			<MoveSpeed>4.6</MoveSpeed>
+			<MinimumContainmentStrength>20</MinimumContainmentStrength>
+			<ToxicResistance>0.5</ToxicResistance>
+			<!-- CE: armor in mm RHA (sharp) and MPa (blunt) -->
+			<ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>2.5</ArmorRating_Blunt>
+			<MeleeDodgeChance>0.9</MeleeDodgeChance>
+			<MeleeCritChance>0.2</MeleeCritChance>
+			<MeleeParryChance>0.05</MeleeParryChance>
+		</statBases>
+		<uiIconPath>Things/Pawn/Lurker/Lurker_MenuIcon</uiIconPath>
+		<race>
+			<body>Fingerspike</body>
+			<baseBodySize>0.45</baseBodySize>
+			<baseHealthScale>0.45</baseHealthScale>
+			<lifeExpectancy>10</lifeExpectancy>
+			<renderTree>Misc</renderTree>
+			<thinkTreeMain>HSK_LurkerMain</thinkTreeMain>
+			<thinkTreeConstant>FleshbeastConstant</thinkTreeConstant>
+			<deathAction Class="DeathActionProperties_Vanish">
+				<workerClass>DeathActionWorker_Vanish</workerClass>
+				<filth>Filth_TwistedFlesh</filth>
+				<filthCountRange>1~2</filthCountRange>
+				<meatExplosionSize>Small</meatExplosionSize>
+			</deathAction>
+			<lifeStageAges>
+				<li>
+					<def>EntityFullyFormed</def>
+					<soundWounded>Pawn_Fleshbeast_Fingerspike_Wounded</soundWounded>
+					<soundDeath>Pawn_Fleshbeast_Fingerspike_Death</soundDeath>
+					<soundCall>Pawn_Fleshbeast_Fingerspike_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_AttachPoints">
+				<points>
+					<li>
+						<offset>(-.18, 0, .18)</offset>
+						<type>PlatformRestraint0</type>
+					</li>
+					<li>
+						<offset>(.18, 0, .18)</offset>
+						<type>PlatformRestraint1</type>
+					</li>
+					<li>
+						<offset>(.18, 0, -.18)</offset>
+						<type>PlatformRestraint2</type>
+					</li>
+					<li>
+						<offset>(-.18, 0, -.18)</offset>
+						<type>PlatformRestraint3</type>
+					</li>
+				</points>
+			</li>
+			<li Class="CompProperties_CanBeDormant">
+				<maxDistAwakenByOther>3</maxDistAwakenByOther>
+				<wakeUpDelayRange>100~200</wakeUpDelayRange>
+				<jobDormancy>true</jobDormancy>
+			</li>
+			<li Class="CompProperties_WakeUpDormant">
+				<wakeUpOnDamage>true</wakeUpOnDamage>
+				<wakeUpCheckRadius>4.9</wakeUpCheckRadius>
+				<wakeUpIfAnyTargetClose>true</wakeUpIfAnyTargetClose>
+				<wakeUpWithDelay>true</wakeUpWithDelay>
+				<activateMessageKey>MessageFingerspikeDisturbed</activateMessageKey>
+				<activatePluralMessageKey>MessageFingerspikeDisturbedPlural</activatePluralMessageKey>
+				<wakeUpTargetingParams>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<canTargetHumans>true</canTargetHumans>
+				</wakeUpTargetingParams>
+			</li>
+			<li Class="CompProperties_Studiable">
+				<frequencyTicks>120000</frequencyTicks>
+				<knowledgeCategory>Basic</knowledgeCategory>
+				<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+				<anomalyKnowledge>1</anomalyKnowledge>
+				<requiresHoldingPlatform>true</requiresHoldingPlatform>
+			</li>
+			<li Class="CompProperties_ProducesBioferrite">
+				<bioferriteDensity>1</bioferriteDensity>
+			</li>
+		</comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>spike</label>
+				<labelNoLocation>spike</labelNoLocation>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>MiddleSpike</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<armorPenetrationSharp>0.5</armorPenetrationSharp>
+				<armorPenetrationBlunt>1</armorPenetrationBlunt>
+				<soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+				<soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+			</li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef ParentName="BaseFleshbeastKind">
+		<defName>Lurker</defName>
+		<label>Lurker</label>
+		<race>Lurker</race>
+		<abilities>
+			<li>SpikeLaunch_Fingerspike</li>
+		</abilities>
+		<combatPower>35</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Lurker/Lurker</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.8</drawSize>
+				</bodyGraphicData>
+				<silhouetteGraphicData>
+					<texPath>Things/Pawn/Lurker/Lurker_MenuIcon</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>1.8</drawSize>
+				</silhouetteGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

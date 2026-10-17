@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <MemeDef>
+    <defName>HSK_Unitology</defName>
+    <label>unitology</label>
+    <description>Convergence is the end of every road. The dead are not lost, they are the first to hear the marker's signal and be made whole. Followers revere corpses, flock to the black marker and preach without rest.</description>
+    <iconPath>Things/Building/Art/ObeliskSculpture</iconPath>
+    <groupDef MayRequire="Ludeon.RimWorld.Ideology">Misc</groupDef>
+    <impact>2</impact>
+    <renderOrder>1102</renderOrder>
+    <requireOne>
+      <li><li>HSK_Unitology_DeadExalted</li></li>
+      <li><li>HSK_Unitology_Convergence</li></li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->unitologist</li>
+        <li>memeAdjective->convergent</li>
+        <li>memeConcept->convergence</li>
+        <li>memeConcept->the marker</li>
+        <li>memeConcept->the signal</li>
+        <li>memeMoralist->unitologist</li>
+      </rulesStrings>
+    </generalRules>
+    <thingStyleCategories>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category MayRequire="Ludeon.RimWorld.Ideology">Morbid</category>
+        <priority>3</priority>
+      </li>
+    </thingStyleCategories>
+  </MemeDef>
+
+</Defs>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WorkGiverDef>
+    <defName>HSK_StudyBlackMarker</defName>
+    <label>study marker</label>
+    <giverClass>HSK.Watcher.DeadSpace.WorkGiver_StudyBlackMarker</giverClass>
+    <workType>Research</workType>
+    <priorityInType>10</priorityInType>
+    <verb>study</verb>
+    <gerund>studying</gerund>
+    <directOrderable>true</directOrderable>
+    <scanThings>true</scanThings>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+ 
+</Defs>

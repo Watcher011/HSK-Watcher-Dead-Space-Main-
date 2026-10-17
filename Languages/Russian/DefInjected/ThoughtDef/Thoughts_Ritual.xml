@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HSK_Unitology_DeadNearby.stages.0.label>мёртвые рядом</HSK_Unitology_DeadNearby.stages.0.label>
+  <HSK_Unitology_DeadNearby.stages.0.description>Мёртвые лежат близко. Конвергенция близка, и они — её первые плоды.</HSK_Unitology_DeadNearby.stages.0.description>
+  <HSK_Unitology_DeadNearby.stages.1.label>собрание мёртвых</HSK_Unitology_DeadNearby.stages.1.label>
+  <HSK_Unitology_DeadNearby.stages.1.description>Так много мёртвых собрано вместе. Вот каково это — ощущать святое место.</HSK_Unitology_DeadNearby.stages.1.description>
+
+  <HSK_Unitology_NearMarker.stages.0.label>в тени Маркера</HSK_Unitology_NearMarker.stages.0.label>
+  <HSK_Unitology_NearMarker.stages.0.description>Маркер близко. Его сигнал слаб, но я почти слышу его.</HSK_Unitology_NearMarker.stages.0.description>
+  <HSK_Unitology_NearMarker.stages.1.label>в свете пробуждённого Маркера</HSK_Unitology_NearMarker.stages.1.label>
+  <HSK_Unitology_NearMarker.stages.1.description>Маркер пробудился. Сигнал наполняет меня. Вот зачем мы живём.</HSK_Unitology_NearMarker.stages.1.description>
+
+
+</LanguageData>

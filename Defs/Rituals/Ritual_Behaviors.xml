@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <!-- ===== Rite of the marker: behavior ===== -->
+  <RitualBehaviorDef ParentName="DateRitualBehavior">
+    <defName>HSK_MarkerRite</defName>
+    <durationTicks>6000</durationTicks>
+    <roles Inherit="False">
+      <li Class="RitualRoleTag">
+        <label>speaker</label>
+        <tag>Leader</tag>
+        <id>leader</id>
+        <precept>IdeoRole_Leader</precept>
+        <required>True</required>
+        <substitutable>True</substitutable>
+        <maxCount>1</maxCount>
+        <countsAsParticipant>False</countsAsParticipant>
+        <allowChild>false</allowChild>
+        <mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
+      </li>
+    </roles>
+    <spectatorsLabel>Congregation</spectatorsLabel>
+    <spectatorGerund>attend</spectatorGerund>
+    <stages Inherit="False">
+      <li>
+        <defaultDuty>Spectate</defaultDuty>
+        <essential>True</essential>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.4</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>leader</roleId>
+            <dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+            <speakerInteraction>Speech_DateRitual</speakerInteraction>
+            <customPositions>
+              <li Class="RitualPosition_BesideThing" />
+            </customPositions>
+          </li>
+        </roleBehaviors>
+      </li>
+      <li>
+        <defaultDuty>SpectateCircle</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.6</percentage>
+          </li>
+        </endTriggers>
+      </li>
+    </stages>
+  </RitualBehaviorDef>
+ 
+  <!-- ===== Rite of the marker: outcome ===== -->
+  <RitualOutcomeEffectDef>
+    <defName>HSK_MarkerRite</defName>
+    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days. Holding the rite at a black marker greatly improves quality.</description>
+    <workerClass>RitualOutcomeEffectWorker_FromQuality</workerClass>
+    <comps>
+      <li Class="RitualOutcomeComp_RitualTargetDefs">
+        <defs>
+          <li>HSK_BlackMarker</li>
+          <li>HSK_Altar_MarkerSmall</li>
+        </defs>
+        <label>held at the marker</label>
+        <qualityOffset>0.35</qualityOffset>
+        <expectedThingLabelTip>a black marker</expectedThingLabelTip>
+      </li>
+      <li Class="RitualOutcomeComp_RolePresentNotSubstituted">
+        <roleId>leader</roleId>
+        <label>leader present</label>
+        <qualityOffset>0.2</qualityOffset>
+      </li>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1,  0.0)</li>
+            <li>(5,  0.2)</li>
+            <li>(10, 0.3)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_RoomStat">
+        <label>room impressiveness</label>
+        <statDef>Impressiveness</statDef>
+        <curve>
+          <points>
+            <li>0,  0</li>
+            <li>50,  0.1</li>
+            <li>120, 0.2</li>
+          </points>
+        </curve>
+      </li>
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Terrible</label>
+        <chance>0.05</chance>
+        <memory>TerribleFestival</memory>
+        <description>The {0} was terrible! The signal was lost in noise and quarrels.</description>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>Dull</label>
+        <chance>0.15</chance>
+        <memory>BoringFestival</memory>
+        <description>The {0} was dull. The marker stayed silent for everyone.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Communion</label>
+        <chance>0.6</chance>
+        <memory>FunFestival</memory>
+        <description>The {0} brought communion. Everyone felt the signal and the unity of the faithful.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Convergence</label>
+        <chance>0.2</chance>
+        <memory>UnforgettableFestival</memory>
+        <description>The {0} was convergence itself! Every voice joined the marker's song.</description>
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+
+</Defs>

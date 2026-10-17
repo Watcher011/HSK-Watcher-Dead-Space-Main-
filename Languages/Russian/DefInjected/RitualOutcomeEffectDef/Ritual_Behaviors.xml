@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Rite of the marker: outcome -->
+
+  <HSK_MarkerRite.description>В зависимости от качества ритуала участники получат от {MINMOOD} до {MAXMOOD} настроения на {MOODDAYS} дней. Проведение ритуала у чёрного Маркера значительно повышает качество.</HSK_MarkerRite.description>
+  <HSK_MarkerRite.outcomeChances.0.label>Ужасный</HSK_MarkerRite.outcomeChances.0.label>
+  <HSK_MarkerRite.outcomeChances.0.description>{0} был ужасен! Сигнал потерялся в шуме и ссорах.</HSK_MarkerRite.outcomeChances.0.description>
+  <HSK_MarkerRite.outcomeChances.1.label>Унылый</HSK_MarkerRite.outcomeChances.1.label>
+  <HSK_MarkerRite.outcomeChances.1.description>{0} был уныл. Маркер остался безмолвен для всех.</HSK_MarkerRite.outcomeChances.1.description>
+  <HSK_MarkerRite.outcomeChances.2.label>Причастие</HSK_MarkerRite.outcomeChances.2.label>
+  <HSK_MarkerRite.outcomeChances.2.description>{0} принёс причастие. Все почувствовали сигнал и единство верных.</HSK_MarkerRite.outcomeChances.2.description>
+  <HSK_MarkerRite.outcomeChances.3.label>Конвергенция</HSK_MarkerRite.outcomeChances.3.label>
+  <HSK_MarkerRite.outcomeChances.3.description>{0} был самой конвергенцией! Каждый голос слился с песней Маркера.</HSK_MarkerRite.outcomeChances.3.description>
+  <HSK_MarkerRite.comps.0.label>проведён у Маркера</HSK_MarkerRite.comps.0.label>
+  <HSK_MarkerRite.comps.1.label>присутствие лидера</HSK_MarkerRite.comps.1.label>
+  <HSK_MarkerRite.comps.2.label>количество участников</HSK_MarkerRite.comps.2.label>
+  <HSK_MarkerRite.comps.3.label>внушительность помещения</HSK_MarkerRite.comps.3.label>
+
+
+</LanguageData>

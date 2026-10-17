@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<IdeoIconDef>
+    <defName>HSK_UnitologyIcon</defName>
+    <iconPath>UI/Issues/Unitology</iconPath>
+    <memes>
+      <li>HSK_Unitology</li>
+    </memes>
+  </IdeoIconDef>
+
+</Defs>

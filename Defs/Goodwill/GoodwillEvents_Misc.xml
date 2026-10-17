@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <GoodwillSituationDef>
+    <defName>HSK_UnitologyDisliked</defName>
+    <label>unitologists</label>
+    <workerClass>GoodwillSituationWorker_MemeCompatibility</workerClass>
+    <meme>HSK_Unitology</meme>
+    <versusAll>true</versusAll>
+    <naturalGoodwillOffset>-20</naturalGoodwillOffset>
+  </GoodwillSituationDef>
+</Defs>

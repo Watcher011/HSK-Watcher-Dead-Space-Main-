@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<IssueDef>
+    <defName>HSK_UnitologyDoctrine</defName>
+    <label>unitology doctrine</label>
+	  <iconPath>UI/Issues/Unitology</iconPath>
+  </IssueDef>
+</Defs>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HSK_MarkerImpact.label>ПАДЕНИЕ МАРКЕРА</HSK_MarkerImpact.label>
+  <HSK_MarkerImpact.letterText>Нечто упало с неба. Ослепляющая вспышка, ударная волна — и когда пыль осела, на месте взрыва стоял чёрный обелиск. Он не похож ни на что, созданное человеческими руками.</HSK_MarkerImpact.letterText>
+  <HSK_MarkerImpact.letterLabel>ПАДЕНИЕ МАРКЕРА</HSK_MarkerImpact.letterLabel>
+
+  <HSK_InfectorOutbreak.label>ВСПЫШКА ИНФЕКТОРОВ</HSK_InfectorOutbreak.label>
+  <HSK_InfectorOutbreak.letterText>Сигнал Маркера достиг мёртвых. Там, где трупы лежат вместе, земля раскололась, и наружу выползают тощие длиннорукие твари. Они ищут тела, чтобы продолжить.\n\nСкульптура-обелиск, установленная в колонии, заглушила бы сигнал.</HSK_InfectorOutbreak.letterText>
+  <HSK_InfectorOutbreak.letterLabel>ВСПЫШКА ИНФЕКТОРОВ</HSK_InfectorOutbreak.letterLabel>
+
+
+</LanguageData>
