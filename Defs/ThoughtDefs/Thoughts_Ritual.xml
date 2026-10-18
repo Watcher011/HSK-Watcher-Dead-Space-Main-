@@ -34,4 +34,19 @@
     </stages>
   </ThoughtDef>
 
+ 
+  <ThoughtDef>
+    <defName>HSK_UnitologyWhisper</defName>
+    <thoughtClass>HSK.Watcher.DeadSpace.Thought_UnitologyWhisper</thoughtClass>
+    <durationDays>4</durationDays>
+    <stackLimit>1</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>whisper</label>
+        <description>A voice from the void.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 </Defs>

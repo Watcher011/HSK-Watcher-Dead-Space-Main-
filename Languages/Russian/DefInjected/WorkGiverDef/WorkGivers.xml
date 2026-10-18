@@ -4,9 +4,10 @@
   <HSK_StudyBlackMarker.label>ИЗУЧЕНИЕ МАРКЕРА</HSK_StudyBlackMarker.label>
   <HSK_StudyBlackMarker.verb>изучать</HSK_StudyBlackMarker.verb>
   <HSK_StudyBlackMarker.gerund>изучение</HSK_StudyBlackMarker.gerund>
-<HSK_OfferCorpseToMarker.label>жертвовать трупы Маркеру</HSK_OfferCorpseToMarker.label>
-<HSK_OfferCorpseToMarker.verb>жертвовать</HSK_OfferCorpseToMarker.verb>
-<HSK_OfferCorpseToMarker.gerund>жертвование</HSK_OfferCorpseToMarker.gerund>
 
+
+  <!--<HSK_OfferCorpseToMarker.label>жертвовать трупы Маркеру</HSK_OfferCorpseToMarker.label>-->
+  <!--<HSK_OfferCorpseToMarker.verb>жертвовать</HSK_OfferCorpseToMarker.verb>-->
+  <!--<HSK_OfferCorpseToMarker.gerund>жертвование</HSK_OfferCorpseToMarker.gerund>-->
 
 </LanguageData>

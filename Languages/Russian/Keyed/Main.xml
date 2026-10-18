@@ -2,7 +2,7 @@
 <LanguageData>
 
   <HSK_InfectorCorpseRises>Труп {0} заражён. Он восстал некроморфом — и надежды больше нет.</HSK_InfectorCorpseRises>
- 
+
   <HSK_InfectorAnimalCorpseRises>Труп {0} заражён. Он восстал притаившимся — и теперь оно ждёт в темноте.</HSK_InfectorAnimalCorpseRises>
   <HSK_MarkerStudyLabel>Изучить</HSK_MarkerStudyLabel>
   <HSK_MarkerStudyDesc>Разрешить колонистам изучать этот маркер. Полностью изученный маркер становится красным и даёт гораздо больше энергии.</HSK_MarkerStudyDesc>
@@ -16,23 +16,91 @@
 
   <HSK_MarkerFascinated>{0} притягивает чёрный маркер, и он(а) идёт его изучать.</HSK_MarkerFascinated>
 
-  
-  
-  
-   <HSK_MarkerOfferLabel>Принимать трупы</HSK_MarkerOfferLabel>
+
+
+
+  <HSK_MarkerOfferLabel>Принимать трупы</HSK_MarkerOfferLabel>
   <HSK_MarkerOfferDesc>Разрешить маркеру поглощать корнями трупы людей и животных, лежащие рядом. Каждый труп заполняет шкалу вознесения: на порогах из маркера выходят некроморфы, а полная шкала вызывает Единение.</HSK_MarkerOfferDesc>
- 
+
   <HSK_MarkerCorpseZoneLabel>Зона трупов</HSK_MarkerCorpseZoneLabel>
   <HSK_MarkerCorpseZoneDesc>Создать зону хранения трупов на свободных клетках вокруг маркера. Колонисты будут стаскивать туда трупы, а корни маркера поглотят их.</HSK_MarkerCorpseZoneDesc>
   <HSK_MarkerCorpseZoneNoRoom>Вокруг маркера нет свободных клеток для зоны.</HSK_MarkerCorpseZoneNoRoom>
   <HSK_MarkerConsuming>Корни поглощают трупы.</HSK_MarkerConsuming>
- 
+
   <HSK_MarkerAscensionInspect>Вознесение: {0} / {1} ({2})</HSK_MarkerAscensionInspect>
   <HSK_MarkerAscensionUnity>Единение свершилось</HSK_MarkerAscensionUnity>
- 
+
   <HSK_MarkerWaveLabel>Маркер отзывается</HSK_MarkerWaveLabel>
   <HSK_MarkerWaveText>Мёртвые, отданные маркеру, не ушли. Вокруг него шевелится тьма: наружу выходят существа ({0}).</HSK_MarkerWaveText>
- 
+
   <HSK_MarkerUnityLabel>Единение</HSK_MarkerUnityLabel>
   <HSK_MarkerUnityText>Шкала полна. Маркер раскрывается, и всё, что было людьми и зверями, возвращается разом ({0}). Конвергенция началась.</HSK_MarkerUnityText>
+
+
+ <HSK_Whispers_Label>Шёпот из пустоты</HSK_Whispers_Label>
+  <HSK_Whispers_Letter>Колонистов накрыл беззвучный шёпот. У каждого свой голос, и каждый слышит что-то своё. Настроение упало у: {0}.</HSK_Whispers_Letter>
+  <HSK_Whisper_Desc>{0}: {1}</HSK_Whisper_Desc>
+ 
+  <HSK_WhisperCat_Command>Подчинение</HSK_WhisperCat_Command>
+  <HSK_WhisperDesc_Command>Приказ, которому почти невозможно не подчиниться.</HSK_WhisperDesc_Command>
+  <HSK_WhisperCat_Statement>Ужас неизбежности</HSK_WhisperCat_Statement>
+  <HSK_WhisperDesc_Statement>Голос спокойно констатирует то, чего нельзя принять.</HSK_WhisperDesc_Statement>
+  <HSK_WhisperCat_Identity>Потеря «Я»</HSK_WhisperCat_Identity>
+  <HSK_WhisperDesc_Identity>Границы личности стираются.</HSK_WhisperDesc_Identity>
+  <HSK_WhisperCat_Cosmic>Космический ужас</HSK_WhisperCat_Cosmic>
+  <HSK_WhisperDesc_Cosmic>Чувство собственной ничтожности перед бездной.</HSK_WhisperDesc_Cosmic>
+  <HSK_WhisperCat_Flesh>Плоть и насилие</HSK_WhisperCat_Flesh>
+  <HSK_WhisperDesc_Flesh>Шокирующие образы собственного тела.</HSK_WhisperDesc_Flesh>
+  <HSK_WhisperCat_Distortion>Искажение реальности</HSK_WhisperCat_Distortion>
+  <HSK_WhisperDesc_Distortion>Мир вокруг больше не кажется надёжным.</HSK_WhisperDesc_Distortion>
+  <HSK_WhisperCat_Ritual>Ритуал</HSK_WhisperCat_Ritual>
+  <HSK_WhisperDesc_Ritual>Шёпот зовёт к священному слиянию.</HSK_WhisperDesc_Ritual>
+ 
+  <HSK_Whisper_Command_1>Стань пустотой</HSK_Whisper_Command_1>
+  <HSK_Whisper_Command_2>Открой нам дверь</HSK_Whisper_Command_2>
+  <HSK_Whisper_Command_3>Сними кожу</HSK_Whisper_Command_3>
+  <HSK_Whisper_Command_4>Впусти нас</HSK_Whisper_Command_4>
+  <HSK_Whisper_Command_5>Забудь себя</HSK_Whisper_Command_5>
+  <HSK_Whisper_Command_6>Иди на свет</HSK_Whisper_Command_6>
+  <HSK_Whisper_Command_7>Дай нам руку</HSK_Whisper_Command_7>
+  <HSK_Whisper_Command_8>Сделай шаг</HSK_Whisper_Command_8>
+  <HSK_Whisper_Statement_9>Ты уже мёртв</HSK_Whisper_Statement_9>
+  <HSK_Whisper_Statement_10>Мы внутри тебя</HSK_Whisper_Statement_10>
+  <HSK_Whisper_Statement_11>Кислород кончился</HSK_Whisper_Statement_11>
+  <HSK_Whisper_Statement_12>Это не сон</HSK_Whisper_Statement_12>
+  <HSK_Whisper_Statement_13>Они ждут</HSK_Whisper_Statement_13>
+  <HSK_Whisper_Statement_14>Ты опоздал</HSK_Whisper_Statement_14>
+  <HSK_Whisper_Statement_15>Выхода нет</HSK_Whisper_Statement_15>
+  <HSK_Whisper_Statement_16>Ты один</HSK_Whisper_Statement_16>
+  <HSK_Whisper_Identity_17>Я — это ты</HSK_Whisper_Identity_17>
+  <HSK_Whisper_Identity_18>Нас миллион</HSK_Whisper_Identity_18>
+  <HSK_Whisper_Identity_19>Твоё имя ложь</HSK_Whisper_Identity_19>
+  <HSK_Whisper_Identity_20>Мы — плоть</HSK_Whisper_Identity_20>
+  <HSK_Whisper_Identity_21>Ты — ничто</HSK_Whisper_Identity_21>
+  <HSK_Whisper_Identity_22>Кто говорит?</HSK_Whisper_Identity_22>
+  <HSK_Whisper_Identity_23>Мы одно</HSK_Whisper_Identity_23>
+  <HSK_Whisper_Cosmic_24>Смотри вниз</HSK_Whisper_Cosmic_24>
+  <HSK_Whisper_Cosmic_25>Оно плывёт</HSK_Whisper_Cosmic_25>
+  <HSK_Whisper_Cosmic_26>Звёзды мертвы</HSK_Whisper_Cosmic_26>
+  <HSK_Whisper_Cosmic_27>Там пустота</HSK_Whisper_Cosmic_27>
+  <HSK_Whisper_Cosmic_28>Оно дышит</HSK_Whisper_Cosmic_28>
+  <HSK_Whisper_Cosmic_29>Слушай тишину</HSK_Whisper_Cosmic_29>
+  <HSK_Whisper_Flesh_30>Съешь себя</HSK_Whisper_Flesh_30>
+  <HSK_Whisper_Flesh_31>Кровь стынет</HSK_Whisper_Flesh_31>
+  <HSK_Whisper_Flesh_32>Разрежь связь</HSK_Whisper_Flesh_32>
+  <HSK_Whisper_Flesh_33>Стань мясом</HSK_Whisper_Flesh_33>
+  <HSK_Whisper_Flesh_34>Больше не больно</HSK_Whisper_Flesh_34>
+  <HSK_Whisper_Flesh_35>Тепло внутри</HSK_Whisper_Flesh_35>
+  <HSK_Whisper_Distortion_36>Стены близко</HSK_Whisper_Distortion_36>
+  <HSK_Whisper_Distortion_37>Они за спиной</HSK_Whisper_Distortion_37>
+  <HSK_Whisper_Distortion_38>Не оборачивайся</HSK_Whisper_Distortion_38>
+  <HSK_Whisper_Distortion_39>Кто-то дышит</HSK_Whisper_Distortion_39>
+  <HSK_Whisper_Distortion_40>Шум в голове</HSK_Whisper_Distortion_40>
+  <HSK_Whisper_Distortion_41>Это не твои мысли</HSK_Whisper_Distortion_41>
+  <HSK_Whisper_Ritual_42>Мы жаждем</HSK_Whisper_Ritual_42>
+  <HSK_Whisper_Ritual_43>Прими дар</HSK_Whisper_Ritual_43>
+  <HSK_Whisper_Ritual_44>Началось слияние</HSK_Whisper_Ritual_44>
+  <HSK_Whisper_Ritual_45>Восхождение близко</HSK_Whisper_Ritual_45>
+  <HSK_Whisper_Ritual_46>Отдай нам глаз</HSK_Whisper_Ritual_46>
+  <HSK_Whisper_Ritual_47>Плоть едина</HSK_Whisper_Ritual_47>
 </LanguageData>

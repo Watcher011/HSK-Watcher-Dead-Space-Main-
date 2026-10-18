@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef ParentName="ResourceBase">
+		<defName>Markerite</defName>
+		<label>Markerite alloy</label>
+		<description>A rectangular ingot of a pale, swamp-green hue. Trapped within the metal are murky, milky-white swirls resembling clouds of toxic gas or coagulated protein. The surface is cold and smooth, reminiscent of polished jade. Along the top edge are three dark green, almost black hook-like growths. They are organic in origin (ossified tendons or mutated Necromorph spikes) and serve as secure attachment points for magnetic grapples or transport platforms.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Markerite</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>150</stackLimit>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MarketValue>40</MarketValue>
+			<StuffPower_Armor_Blunt>5.15</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>5.4</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.537</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>-15</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>-15</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>2.6</SharpDamageMultiplier>
+			<BluntDamageMultiplier>2.2</BluntDamageMultiplier>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>1</Flammability>
+			<Mass>0.15</Mass>
+			<Bulk>0.15</Bulk>
+		</statBases>
+		<thingCategories>
+			<li>RARBar</li>
+			<li>USLDHBar</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(5,30,5,5)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	
+
+</Defs>

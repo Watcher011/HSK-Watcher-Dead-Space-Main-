@@ -30,4 +30,17 @@
     <letterText>The marker's signal has reached the dead. Where the corpses lie together, the ground has split and thin, long-limbed creatures are crawling out. They are looking for bodies to continue.\n\nAn obelisk sculpture standing in the colony would have drowned out the signal.</letterText>
       <letterDef>NegativeEvent</letterDef>
   </IncidentDef>
+  
+  <IncidentDef>
+    <defName>HSK_UnitologyWhispers</defName>
+    <label>whispers from the void</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>HSK.Watcher.DeadSpace.IncidentWorker_UnitologyWhispers</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>15</minRefireDays>
+    <earliestDay>10</earliestDay>
+  </IncidentDef>
 </Defs>
