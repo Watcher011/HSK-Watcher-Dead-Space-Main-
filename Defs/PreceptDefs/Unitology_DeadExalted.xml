@@ -2,7 +2,7 @@
 <Defs>
 <PreceptDef>
     <defName>HSK_Unitology_DeadExalted</defName>
-    <issue>HSK_UnitologyDoctrine</issue>
+    <issue>Corpses</issue>
     <label>the dead exalted</label>
     <description>The dead are the first to be made whole. Followers are comforted by corpses and graves nearby and feel no horror at the sight of them.</description>
     <impact>Medium</impact>

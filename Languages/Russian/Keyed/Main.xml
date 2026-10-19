@@ -37,10 +37,10 @@
   <HSK_MarkerUnityText>Шкала полна. Маркер раскрывается, и всё, что было людьми и зверями, возвращается разом ({0}). Конвергенция началась.</HSK_MarkerUnityText>
 
 
- <HSK_Whispers_Label>Шёпот из пустоты</HSK_Whispers_Label>
+  <HSK_Whispers_Label>Шёпот из пустоты</HSK_Whispers_Label>
   <HSK_Whispers_Letter>Колонистов накрыл беззвучный шёпот. У каждого свой голос, и каждый слышит что-то своё. Настроение упало у: {0}.</HSK_Whispers_Letter>
   <HSK_Whisper_Desc>{0}: {1}</HSK_Whisper_Desc>
- 
+
   <HSK_WhisperCat_Command>Подчинение</HSK_WhisperCat_Command>
   <HSK_WhisperDesc_Command>Приказ, которому почти невозможно не подчиниться.</HSK_WhisperDesc_Command>
   <HSK_WhisperCat_Statement>Ужас неизбежности</HSK_WhisperCat_Statement>
@@ -55,7 +55,7 @@
   <HSK_WhisperDesc_Distortion>Мир вокруг больше не кажется надёжным.</HSK_WhisperDesc_Distortion>
   <HSK_WhisperCat_Ritual>Ритуал</HSK_WhisperCat_Ritual>
   <HSK_WhisperDesc_Ritual>Шёпот зовёт к священному слиянию.</HSK_WhisperDesc_Ritual>
- 
+
   <HSK_Whisper_Command_1>Стань пустотой</HSK_Whisper_Command_1>
   <HSK_Whisper_Command_2>Открой нам дверь</HSK_Whisper_Command_2>
   <HSK_Whisper_Command_3>Сними кожу</HSK_Whisper_Command_3>
@@ -103,4 +103,5 @@
   <HSK_Whisper_Ritual_45>Восхождение близко</HSK_Whisper_Ritual_45>
   <HSK_Whisper_Ritual_46>Отдай нам глаз</HSK_Whisper_Ritual_46>
   <HSK_Whisper_Ritual_47>Плоть едина</HSK_Whisper_Ritual_47>
+
 </LanguageData>

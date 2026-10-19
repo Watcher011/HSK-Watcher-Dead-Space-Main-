@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IdeoPresetDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>HSK_Unitology_Preset</defName>
+    <label>unitology</label>
+    <description>Convergence is the end of every road. The dead are exalted, the black marker is holy, and the faith must be spread without rest.\n\nFollowers revere corpses, gather around the marker and convert others often. Corpses are not disturbing to them.</description>
+    <categoryDef>Mild</categoryDef>
+    <iconPath>Things/Building/Art/ObeliskSculpture</iconPath>
+    <memes>
+      <li>HSK_Unitology</li>
+    </memes>
+  </IdeoPresetDef>
+  
+</Defs>
