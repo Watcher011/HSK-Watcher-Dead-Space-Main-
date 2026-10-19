@@ -20,6 +20,7 @@
       </damageData>
     </graphicData>
     <size>(3, 2)</size>
+	<minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
     <blockWind>true</blockWind>
@@ -31,6 +32,7 @@
     <statBases>
       <MaxHitPoints>2000</MaxHitPoints>
       <Flammability>0</Flammability>
+	  <Mass>500</Mass>
     </statBases>
     <building>
       <deconstructible>false</deconstructible>
