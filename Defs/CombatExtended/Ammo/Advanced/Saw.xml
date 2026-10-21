@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoSaw</defName>
+		<label>Saw</label>
+		<parent>AmmoNeolithic</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberArrow</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Saw</defName>
+		<label>Saw</label>
+		<ammoTypes>
+			<Ammo_Saw>Saw</Ammo_Saw>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SmallAmmoBase">
+		<defName>Ammo_Saw</defName>
+		<label>Saw</label>
+		<description>The Saw.</description>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FueledSmithy</li>
+			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoDarts</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Ammo/Saw</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.5</MarketValue>
+			<Mass>0.012</Mass>
+			<Bulk>0.01</Bulk>
+		</statBases>
+		<ammoClass>VenomArrow</ammoClass>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseSaw" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Saw</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Saw</damageDef>
+			<speed>28</speed>
+			<dropsCasings>false</dropsCasings>
+            <suppressionFactor>2</suppressionFactor>
+            <dangerFactor>1</dangerFactor>
+            <airborneSuppressionFactor>2.5</airborneSuppressionFactor>
+			<preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+			<preExplosionSpawnThingDef>Ammo_Saw</preExplosionSpawnThingDef>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseSaw">
+		<defName>Saw</defName>
+		<label>Saw</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>30</damageAmountBase>
+			<!-- <armorPenetrationBase>0.15</armorPenetrationBase> -->
+			<armorPenetrationBlunt>241.12</armorPenetrationBlunt>
+			<armorPenetrationSharp>20.9</armorPenetrationSharp>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeNeolithicBase">
+		<defName>MakeAmmo_Saw</defName>
+		<label>make Saw x50</label>
+		<description>Craft 50 Saw.</description>
+		<jobString>Making Saws.</jobString>
+		<workAmount>500</workAmount>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workSkill>Crafting</workSkill>
+		<targetCountAdjustment>50</targetCountAdjustment>
+		<recipeUsers>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Medicine>7</Medicine>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+					</categories>
+				</filter>
+				<count>55</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_Saw>50</Ammo_Saw>
+		</products>
+	</RecipeDef>
+
+</Defs>

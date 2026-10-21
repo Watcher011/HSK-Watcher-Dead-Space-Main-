@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- C1 ASCENSION -->
+    <ThingDef ParentName="BaseGun_ShortBarreled">
+        <defName>Gun_PlasmaCutter</defName>
+        <label>Plasma cutter</label>
+        <description>The plasma cutter is a mining tool designed for processing rock. Due to its unexpected effectiveness against Necromorphs in the region, the plasma cutter has become one of the primary tools for survival during the outbreak.</description>
+        <graphicData>
+            <texPath>Things/Item/Weapons/PlasmaCutter</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>2600</MarketValue>
+            <SightsEfficiency>1.15</SightsEfficiency>
+            <ShotSpread>0.06</ShotSpread>
+            <SwayFactor>1.05</SwayFactor>
+            <RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
+            <Bulk>3.20</Bulk>
+            <Mass>1.50</Mass>
+        </statBases>
+        <tradeability>Sellable</tradeability>
+        <soundInteract>InteractPlasma</soundInteract>
+		<techLevel>Spacer</techLevel>
+		 <equippedStatOffsets>
+            <ConstructionSpeed>0.35</ConstructionSpeed>
+            <SmithingSpeed>0.3</SmithingSpeed>
+            <MeleeCritChance>0.22</MeleeCritChance>
+        </equippedStatOffsets>
+        <weaponTags>
+            <li>ADP2</li>
+            <li>AdvancedGun</li>
+            <li>TierTwoLow</li>
+            <li>Futuristic</li>
+		  <li>CE_Sidearm</li>
+		  <li>CE_AI_Pistol</li>
+		  <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+		<weaponClasses>
+			<li>Ultratech</li>
+			<li>RangedLight</li>
+		</weaponClasses>
+        <thingCategories>
+            <li>Futuristic</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_PlasmaClot</defaultProjectile>
+                <warmupTime>0.52</warmupTime>
+                <range>45</range>
+                <soundCast>Fire_UACPistol</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>25</magazineSize>
+                <reloadTime>1.80</reloadTime>
+                <ammoSet>AmmoSet_PlasmaClot</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Plasma_Component>1</Plasma_Component>
+            <Weapon_Parts>4</Weapon_Parts>
+			<Plastic>5</Plastic>
+        </smeltProducts>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    </ThingDef>
+	
+	
+	
+	<ThingDef ParentName="BaseGun_Heavy">
+		<defName>Gun_PulseRifle</defName>
+		<label>Pulse Rifle</label>
+		<description>This weapon is a multi-barreled automatic rifle. Three barrels are arranged around a slender central frame, positioned at equal angles to one another. The primary engagement area is marked by four laser designators—one for each barrel, plus a central one.</description>
+		<graphicData>
+			<texPath>Things/Item/Weapons/PulseRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<MarketValue>1900</MarketValue>
+			<SightsEfficiency>1.05</SightsEfficiency>
+			<ShotSpread>0.08</ShotSpread>
+			<SwayFactor>0.89</SwayFactor>
+			<RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+			<Bulk>9</Bulk>
+			<Mass>8.1</Mass>
+		</statBases>
+		<weaponTags>
+			<li>MG2</li>
+			<li>GunHeavy</li>
+			<li>MachineGun</li>
+			<li>BrotherhoodHeavy</li>
+			<li>SectarianHeavy</li>
+			<li>SyndicateMachineGun</li>
+			<li>OrionHeavy</li>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+		</weaponTags>
+		<thingCategories>
+			<li>MachineGun</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.6</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<warmupTime>1.6</warmupTime>
+				<range>55</range>
+				<soundCast>ShotAK47</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>100</magazineSize>
+				<reloadTime>6.00</reloadTime>
+				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.2,1.1</DrawSize>
+			</li>
+		</modExtensions>
+		<smeltProducts>
+			<Heavy_Component>1</Heavy_Component>
+			<Weapon_Parts>5</Weapon_Parts>
+			<Plastic>5</Plastic>
+		</smeltProducts>
+	</ThingDef>
+	
+	  <ThingDef ParentName="BaseGun_Heavy">
+        <defName>Gun_ContactBeam</defName>
+        <label>Contact Beam</label>
+        <description>A power cutter is a tool designed to create a powerful explosion that is nonetheless focused within a small area.</description>
+        <graphicData>
+            <texPath>Things/Item/Weapons/ContactBeam</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1450</MarketValue>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.17</ShotSpread>
+            <SwayFactor>1.8</SwayFactor>
+            <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+            <Bulk>8.1</Bulk>
+            <Mass>3.6</Mass>
+        </statBases>
+        <weaponTags>
+            <li>GLT1</li>
+            <li>Glaunchers</li>
+            <li>CE_AI_Rifle</li>
+            <li>CE_AI_Launcher</li>
+            <li>CE_AI_AOE</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Glaunchers</li>
+        </thingCategories>
+        <generateCommonality>0.7</generateCommonality>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
+                <warmupTime>1.52</warmupTime>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+                <minRange>4</minRange>
+                <noiseRadius>4</noiseRadius>
+                <!--<forcedMissRadius>2</forcedMissRadius>-->
+                <circularError>0.75</circularError>
+                <range>36</range>
+                <!-- grenades at 12.9 -->
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>RF_ShotMilkorMGL</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+                <onlyManualCast>true</onlyManualCast>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>6</magazineSize>
+                <reloadTime>2.5</reloadTime>
+                <ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="CombatExtended.GunDrawExtension">
+                <DrawSize>1.2,1.1</DrawSize>
+            </li>
+        </modExtensions>
+        <smeltProducts>
+            <Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	
+	<ThingDef ParentName="BaseGun_Heavy">
+        <defName>Gun_DiscRipper</defName>
+        <label>Disc Ripper</label>
+        <description>The pipe cutter is an industrial circular saw, its blade held in place by a miniature kinesis module. Upon activation, the device projects the blade in a chosen direction, then captures it and employs a variable gravitational field to spin the disc up to an immense number of revolutions per second..</description>
+        <graphicData>
+            <texPath>Things/Item/Weapons/DiscRipper</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1450</MarketValue>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.17</ShotSpread>
+            <SwayFactor>1.8</SwayFactor>
+            <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+            <Bulk>8.1</Bulk>
+            <Mass>3.6</Mass>
+        </statBases>
+        <weaponTags>
+            <li>GLT1</li>
+            <li>Glaunchers</li>
+            <li>CE_AI_Rifle</li>
+            <li>CE_AI_Launcher</li>
+            <li>CE_AI_AOE</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Glaunchers</li>
+        </thingCategories>
+        <generateCommonality>0.7</generateCommonality>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Saw</defaultProjectile>
+                <warmupTime>1.52</warmupTime>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+                <minRange>4</minRange>
+                <noiseRadius>4</noiseRadius>
+                <!--<forcedMissRadius>2</forcedMissRadius>-->
+                <circularError>0.75</circularError>
+                <range>36</range>
+                <!-- grenades at 12.9 -->
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>RF_ShotMilkorMGL</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+                <onlyManualCast>true</onlyManualCast>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>8</magazineSize>
+                <reloadTime>2.5</reloadTime>
+                <ammoSet>AmmoSet_Saw</ammoSet>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="CombatExtended.GunDrawExtension">
+                <DrawSize>1.2,1.1</DrawSize>
+            </li>
+        </modExtensions>
+		 <equippedStatOffsets>
+            <PlantWorkSpeed>0.5</PlantWorkSpeed>
+            <ConstructionSpeed>0.5</ConstructionSpeed>
+            <MiningSpeed>0.5</MiningSpeed>
+            <PruningSpeed MayRequire="ludeon.rimworld.ideology">0.5</PruningSpeed>
+        </equippedStatOffsets>
+        <smeltProducts>
+            <Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+</Defs>

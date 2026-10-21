@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+<DamageDef ParentName="LocalInjuryBase">
+		<defName>Saw</defName>
+		<label>Saw</label>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been shattered.</deathMessage>
+		<hediff>Cut</hediff>
+		<hasForcefulImpact>true</hasForcefulImpact>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<defaultDamage>10</defaultDamage>
+		<defaultArmorPenetration>5</defaultArmorPenetration>
+		<buildingDamageFactor>4</buildingDamageFactor>
+		<plantDamageFactor>4</plantDamageFactor>
+		<explosionHeatEnergyPerCell>8</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<soundExplosion>Explosion_OpticBurst</soundExplosion>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<bluntStunDuration>2.0</bluntStunDuration>
+		<bluntInnerHitChance>1.4</bluntInnerHitChance>
+		<bluntInnerHitDamageFractionToConvert>0.1~0.2</bluntInnerHitDamageFractionToConvert>
+		<bluntInnerHitDamageFractionToAdd>0.2~0.35</bluntInnerHitDamageFractionToAdd>
+		<bluntStunChancePerDamagePctOfCorePartToHeadCurve>
+			<points>
+				<li>(0.04, 0.20)</li>
+				<li>(0.5, 1)</li>
+			</points>
+		</bluntStunChancePerDamagePctOfCorePartToHeadCurve>
+		<bluntStunChancePerDamagePctOfCorePartToBodyCurve>
+			<points>
+				<li>(0.4, 0)</li>
+				<li>(0.9, 0.15)</li>
+			</points>
+		</bluntStunChancePerDamagePctOfCorePartToBodyCurve>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+	</DamageDef>
+	
+</Defs>

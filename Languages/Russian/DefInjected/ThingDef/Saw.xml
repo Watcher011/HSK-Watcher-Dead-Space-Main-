@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+<Ammo_Saw.label>Пила</Ammo_Saw.label>
+<Ammo_Saw.description>Пила.</Ammo_Saw.description>
+
+<!-- Снаряды -->
+<Saw.label>Пила</Saw.label>
+
+
+</LanguageData>

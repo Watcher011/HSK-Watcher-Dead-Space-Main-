@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+ <MakeAmmo_Saw.label>Создать Пилу x50</MakeAmmo_Saw.label>
+<MakeAmmo_Saw.description>Создать 50 пил.</MakeAmmo_Saw.description>
+<MakeAmmo_Saw.jobString>Изготовление пил.</MakeAmmo_Saw.jobString>
+
+
+</LanguageData>

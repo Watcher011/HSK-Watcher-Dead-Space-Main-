@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
- <Necromorphe.label>Некроморф</Necromorphe.label>
-<Necromorphe.labelPlural>Некроморфы</Necromorphe.labelPlural>
-<Necromorphe.labelMale>Некроморф</Necromorphe.labelMale>
-<Necromorphe.labelMalePlural>Некроморфы</Necromorphe.labelMalePlural>
-<Necromorphe.labelFemale>Некроморф</Necromorphe.labelFemale>
-<Necromorphe.labelFemalePlural>Некроморфы</Necromorphe.labelFemalePlural>
+  <Necromorphe.label>Некроморф</Necromorphe.label>
+  <Necromorphe.labelPlural>Некроморфы</Necromorphe.labelPlural>
+  <Necromorphe.labelMale>Некроморф</Necromorphe.labelMale>
+  <Necromorphe.labelMalePlural>Некроморфы</Necromorphe.labelMalePlural>
+  <Necromorphe.labelFemale>Некроморф</Necromorphe.labelFemale>
+  <Necromorphe.labelFemalePlural>Некроморфы</Necromorphe.labelFemalePlural>
 
-<Infector.label>Инфектор</Infector.label>
-<Infector.labelPlural>Инфекторы</Infector.labelPlural>
-<Infector.labelMale>Инфектор</Infector.labelMale>
-<Infector.labelMalePlural>Инфекторы</Infector.labelMalePlural>
-<Infector.labelFemale>Инфектор</Infector.labelFemale>
-<Infector.labelFemalePlural>Инфекторы</Infector.labelFemalePlural>
+  <Infector.label>Инфектор</Infector.label>
+  <Infector.labelPlural>Инфекторы</Infector.labelPlural>
+  <Infector.labelMale>Инфектор</Infector.labelMale>
+  <Infector.labelMalePlural>Инфекторы</Infector.labelMalePlural>
+  <Infector.labelFemale>Инфектор</Infector.labelFemale>
+  <Infector.labelFemalePlural>Инфекторы</Infector.labelFemalePlural>
 
-<Lurker.label>Скрытень</Lurker.label>
-<Lurker.labelPlural>Скрытни</Lurker.labelPlural>
-<Lurker.labelMale>Скрытень</Lurker.labelMale>
-<Lurker.labelMalePlural>Скрытни</Lurker.labelMalePlural>
-<Lurker.labelFemale>Скрытень</Lurker.labelFemale>
-<Lurker.labelFemalePlural>Скрытни</Lurker.labelFemalePlural>
+  <Lurker.label>Скрытень</Lurker.label>
+  <Lurker.labelPlural>Скрытни</Lurker.labelPlural>
+  <Lurker.labelMale>Скрытень</Lurker.labelMale>
+  <Lurker.labelMalePlural>Скрытни</Lurker.labelMalePlural>
+  <Lurker.labelFemale>Скрытень</Lurker.labelFemale>
+  <Lurker.labelFemalePlural>Скрытни</Lurker.labelFemalePlural>
 
 
   <!--<Некроморф.label>Некроморф</Некроморф.label>-->

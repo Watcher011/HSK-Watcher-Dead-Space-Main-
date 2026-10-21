@@ -34,6 +34,9 @@
       <Flammability>0</Flammability>
 	  <Mass>500</Mass>
     </statBases>
+	 <thingCategories>
+            <li>BuildingsMisc</li>
+     </thingCategories>
     <building>
       <deconstructible>false</deconstructible>
       	<ai_chillDestination>false</ai_chillDestination>
