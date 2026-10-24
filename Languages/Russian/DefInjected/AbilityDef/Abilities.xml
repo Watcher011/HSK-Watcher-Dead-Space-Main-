@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HSK_Stasis.label>Стазис</HSK_Stasis.label>
+  <HSK_Stasis.description>Запустите стазис-поле в цель. На несколько секунд она теряет способность двигаться и действовать.</HSK_Stasis.description>
+  <HSK_Stasis.verbProperties.label>Стазис</HSK_Stasis.verbProperties.label>
+
+
+</LanguageData>

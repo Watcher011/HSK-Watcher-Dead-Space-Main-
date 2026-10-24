@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- C1 ASCENSION -->
+<BuildGun_PlasmaCutter.label>Собрать плазменный резак</BuildGun_PlasmaCutter.label>
+<BuildGun_PlasmaCutter.description>Собирает плазменный резак. Хорошая дальность, хорошая мощность и низкая скорострельность.</BuildGun_PlasmaCutter.description>
+<BuildGun_PlasmaCutter.jobString>Сборка плазменного резака.</BuildGun_PlasmaCutter.jobString>
+
+<BuildPulseRifle.label>Собрать импульсную винтовку</BuildPulseRifle.label>
+<BuildPulseRifle.description>Собирает импульсную винтовку для личной защиты.\nКалибр: 5.56×45 мм NATO</BuildPulseRifle.description>
+<BuildPulseRifle.jobString>Сборка импульсной винтовки.</BuildPulseRifle.jobString>
+
+<BuildContactBeam.label>Собрать контактный бур</BuildContactBeam.label>
+<BuildContactBeam.description>Собирает контактный бур — оружие пускового типа, стреляющее гранатами с большей скоростью, чем это мог бы делать человек.\nКалибр: 40×46 мм граната</BuildContactBeam.description>
+<BuildContactBeam.jobString>Сборка контактный бура.</BuildContactBeam.jobString>
+
+<BuildDiscRipper.label>Собрать дисковый резак</BuildDiscRipper.label>
+<BuildDiscRipper.description>Собирает дисковый резак. Хороший урон, средняя дальность и скорострельность, но плохая точность.</BuildDiscRipper.description>
+<BuildDiscRipper.jobString>Сборка дискового резака.</BuildDiscRipper.jobString>
+
+
+</LanguageData>

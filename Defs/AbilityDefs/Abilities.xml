@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<AbilityDef>
+    <defName>HSK_Stasis</defName>
+    <label>stasis</label>
+    <description>Fire a stasis field at a target. For a few seconds it can neither move nor act.</description>
+    <iconPath>UI/Abilities/HSK_Stasis</iconPath>
+    <cooldownTicksRange>1800~1800</cooldownTicksRange>
+    <aiCanUse>false</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>stasis</label>
+      <violent>false</violent>
+      <warmupTime>0.5</warmupTime>
+      <range>20.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>true</canTargetAnimals>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="HSK.Watcher.DeadSpace.CompProperties_AbilityStasis">
+        <stunTicks>480</stunTicks>
+        <hediffDef>HSK_StasisField</hediffDef>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

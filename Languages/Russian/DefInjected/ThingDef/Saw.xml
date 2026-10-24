@@ -2,11 +2,16 @@
 <LanguageData>
 
   <!-- Ammo -->
-<Ammo_Saw.label>Пила</Ammo_Saw.label>
-<Ammo_Saw.description>Пила.</Ammo_Saw.description>
 
-<!-- Снаряды -->
-<Saw.label>Пила</Saw.label>
+  <Ammo_Saw.label>Пила</Ammo_Saw.label>
+  <Ammo_Saw.description>Пила.</Ammo_Saw.description>
 
+
+  <!-- Projectiles -->
+
+  <Saw.label>Пила</Saw.label>
+
+
+  <!-- Снаряды -->
 
 </LanguageData>
