@@ -28,8 +28,8 @@
 			<Bulk>3</Bulk>
 			<WornBulk>0</WornBulk>
 			<EquipDelay>2.9</EquipDelay>
-			<Insulation_Heat>9</Insulation_Heat>
-			<Insulation_Cold>9</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
 			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.35</StuffEffectMultiplierInsulation_Heat>
 			<StuffEffectMultiplierArmor>8.06</StuffEffectMultiplierArmor>
@@ -132,10 +132,10 @@ Stasis modules are mounted on the forearms.</description>
 			<Bulk>25</Bulk>
 			<WornBulk>15</WornBulk>
 			<EquipDelay>11</EquipDelay>
-			<Insulation_Heat>5</Insulation_Heat>
-			<Insulation_Cold>5</Insulation_Cold>
-			<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
+			<Insulation_Heat>4</Insulation_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			 <StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
+             <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
 			<StuffEffectMultiplierArmor>3.47</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>6.93</ArmorRating_Sharp>
 			<ArmorRating_Blunt>11.87</ArmorRating_Blunt>

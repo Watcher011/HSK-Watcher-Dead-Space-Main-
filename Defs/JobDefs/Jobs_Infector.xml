@@ -12,5 +12,10 @@
     <reportString>studying TargetA.</reportString>
     <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
   </JobDef>
- 
+   <JobDef>
+    <defName>HSK_CarryAlly</defName>
+    <driverClass>HSK.Watcher.DeadSpace.JobDriver_CarryAlly</driverClass>
+    <reportString>carrying a wounded comrade.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
 </Defs>

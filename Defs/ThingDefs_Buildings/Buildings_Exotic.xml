@@ -160,4 +160,74 @@
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<interactionCellOffset>(0,0, -2)</interactionCellOffset>
 	</ThingDef>
+	
+	<ThingDef ParentName="ShuttleSkyfallerBase">
+    <defName>HSK_CECShuttleIncoming</defName>
+    <label>CEC shuttle (incoming)</label>
+    <thingClass>HSK.Watcher.DeadSpace.Skyfaller_StrikeShuttle</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Misc/Shuttle</texPath>
+      <drawSize>(6,3)</drawSize>
+      <color>(162,164,149)</color>
+    </graphicData>
+    <size>(5,3)</size>
+    <skyfaller>
+      <anticipationSound>Shuttle_Landing</anticipationSound>
+      <anticipationSoundTicks>250</anticipationSoundTicks>
+      <ticksToImpactRange>200~250</ticksToImpactRange>
+      <minimalRoofDestruction>true</minimalRoofDestruction>
+      <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
+      <shadowSize>(5.5,3.5)</shadowSize>
+    </skyfaller>
+  </ThingDef>
+   <ThingDef ParentName="ShuttleSkyfallerBase">
+    <defName>HSK_CECShuttleLeaving</defName>
+    <label>CEC shuttle (leaving)</label>
+    <thingClass>Skyfaller</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Misc/Shuttle</texPath>
+      <drawSize>(6,3)</drawSize>
+      <color>(162,164,149)</color>
+    </graphicData>
+    <size>(5,3)</size>
+    <skyfaller>
+      <reversed>true</reversed>
+      <anticipationSound>Shuttle_Leaving</anticipationSound>
+      <anticipationSoundTicks>-10</anticipationSoundTicks>
+      <ticksToImpactRange>-40~-15</ticksToImpactRange>
+      <moteSpawnTime>0.05</moteSpawnTime>
+      <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
+      <shadowSize>(5.5,3.5)</shadowSize>
+      <motesPerCell>1</motesPerCell>
+    </skyfaller>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>HSK_CECShuttle</defName>
+    <label>CEC shuttle</label>
+    <description>A landed CEC assault shuttle. The strike team will return here when its task is done.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/Shuttle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(6, 3)</drawSize>
+      <color>(162,164,149)</color>
+    </graphicData>
+    <size>(5, 3)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <fillPercent>1</fillPercent>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <deconstructible>false</deconstructible>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+  </ThingDef>
 </Defs>

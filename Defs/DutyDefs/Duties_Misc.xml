@@ -9,4 +9,22 @@
     </subNodes>
   </thinkNode>
 </DutyDef>
+
+<DutyDef>
+    <defName>HSK_DestroyMarker</defName>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- stasis on a colonist when the ability is ready (short action, 30 s cooldown) -->
+        <li Class="HSK.Watcher.DeadSpace.JobGiver_UseStasis" />
+        <!-- answer visible enemies on the way (not when already at the marker) -->
+        <li Class="HSK.Watcher.DeadSpace.JobGiver_FightOnTheWay" />
+        <li Class="HSK.Watcher.DeadSpace.JobGiver_AttackMarker" />
+        <li Class="JobGiver_AIFightEnemies">
+          <targetAcquireRadius>65</targetAcquireRadius>
+          <targetKeepRadius>72</targetKeepRadius>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
 </Defs>

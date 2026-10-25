@@ -43,4 +43,53 @@
     <minRefireDays>15</minRefireDays>
     <earliestDay>10</earliestDay>
   </IncidentDef>
+  
+  
+  <IncidentDef>
+    <defName>HSK_MarkerStrike</defName>
+    <label>CEC marker strike team</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>HSK.Watcher.DeadSpace.IncidentWorker_MarkerStrike</workerClass>
+    <baseChance>0.6</baseChance>
+    <minRefireDays>40</minRefireDays>
+    <earliestDay>15</earliestDay>
+    <modExtensions>
+      <li Class="HSK.Watcher.DeadSpace.MarkerStrikeExtension">
+        <armorDef>Armor_CEC</armorDef>
+        <helmetDef>Helmet_CEC</helmetDef>
+        <shuttleDef>HSK_CECShuttle</shuttleDef>
+        <shuttleIncomingDef>HSK_CECShuttleIncoming</shuttleIncomingDef>
+        <shuttleLeavingDef>HSK_CECShuttleLeaving</shuttleLeavingDef>
+        <!-- stock of ammo varies by +-10% per trooper (0 = exact) -->
+        <ammoSpread>0.1</ammoSpread>
+        <!-- optional: your own PawnKindDef; otherwise AncientSoldier / Mercenary_Gunner is used -->
+        <!-- <pawnKind>HSK_CECTrooper</pawnKind> -->
+        <members>
+          <li>
+            <weaponDef>Gun_PulseRifle</weaponDef>
+            <ammoCount>1000</ammoCount>
+          </li>
+          <li>
+            <weaponDef>Gun_PulseRifle</weaponDef>
+            <ammoCount>1000</ammoCount>
+          </li>
+          <li>
+            <weaponDef>Gun_DiscRipper</weaponDef>
+            <ammoCount>120</ammoCount>
+          </li>
+          <li>
+            <weaponDef>Gun_ContactBeam</weaponDef>
+            <ammoCount>50</ammoCount>
+          </li>
+          <li>
+            <weaponDef>Gun_PlasmaCutter</weaponDef>
+            <ammoCount>400</ammoCount>
+          </li>
+        </members>
+      </li>
+    </modExtensions>
+  </IncidentDef>
 </Defs>
