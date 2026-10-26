@@ -33,12 +33,12 @@
   <HSK_MarkerWaveLabel>Маркер отзывается</HSK_MarkerWaveLabel>
   <HSK_MarkerWaveText>Мёртвые, отданные маркеру, не ушли. Вокруг него шевелится тьма: наружу выходят существа ({0}).</HSK_MarkerWaveText>
 
-  <HSK_MarkerUnityLabel>Единение</HSK_MarkerUnityLabel>
-  <HSK_MarkerUnityText>Шкала полна. Маркер раскрывается, и всё, что было людьми и зверями, возвращается разом ({0}). Конвергенция началась.</HSK_MarkerUnityText>
+  <HSK_MarkerUnityLabel>Конвергенция началась</HSK_MarkerUnityLabel>
+<HSK_MarkerUnityText>Шкала переполнена — не светом, а беззвучным хором мёртвых. Маркер разверзается, как гниющая рана в самом мире, и всё, что когда-то было людьми и зверями, возвращается разом — сплетённое, покорное, единое ({0}). Рассудок тонет в чужой воле, надежда сгнила, и никто уже не помнит, где кончается человек и начинается Маркер.</HSK_MarkerUnityText>
 
 
-  <HSK_Whispers_Label>Шёпот из пустоты</HSK_Whispers_Label>
-  <HSK_Whispers_Letter>Колонистов накрыл беззвучный шёпот. У каждого свой голос, и каждый слышит что-то своё. Настроение упало у: {0}.</HSK_Whispers_Letter>
+<HSK_Whispers_Label>Шёпот из пустоты</HSK_Whispers_Label>
+<HSK_Whispers_Letter>Колонистов накрыл беззвучный шёпот Маркера — не звук, а чужая мысль, вползающая в череп из-за грани. У каждого свой голос: мёртвые зовут по имени, стены дышат, плоть шепчет о единстве, а в зеркалах улыбается то, чего нет. Рассудок трещит по швам, надежда сгнила ещё до рассвета, и никто уже не помнит, где кончается сон и начинается некроморф. Безумие и отчаяние поглотили: {0}.</HSK_Whispers_Letter>
   <HSK_Whisper_Desc>{0}: {1}</HSK_Whisper_Desc>
 
   <HSK_WhisperCat_Command>Подчинение</HSK_WhisperCat_Command>
@@ -112,4 +112,8 @@
   <HSK_MarkerStrike_Departed>Челнок CEC покинул карту.</HSK_MarkerStrike_Departed>
   <HSK_MarkerStrike_Fled>Челнок потерян, оставшиеся бойцы CEC скрылись с карты.</HSK_MarkerStrike_Fled>
   <HSK_MarkerStrike_Wiped>Штурмовая группа CEC уничтожена. Челнок улетел пустым.</HSK_MarkerStrike_Wiped>
+  
+    <HSK_Letter_Close>Закрыть</HSK_Letter_Close>
+  <HSK_Letter_Postpone>Отложить</HSK_Letter_Postpone>
+  <HSK_Letter_Jump>Перейти к месту</HSK_Letter_Jump>
 </LanguageData>

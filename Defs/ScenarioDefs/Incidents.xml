@@ -42,6 +42,7 @@
     <baseChance>0.5</baseChance>
     <minRefireDays>15</minRefireDays>
     <earliestDay>10</earliestDay>
+	<letterDef>NegativeEvent</letterDef>
   </IncidentDef>
   
   

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Изображения для сообщений (писем). Чтобы добавить новое, правки в C#-коде не требуются:
+letterKey — defName из IncidentDef или ключ перевода заголовка сообщения.
+imagePath — путь внутри папки Textures (без расширения файла; соотношение сторон 8:3, например 1280x480).
+Если для сообщения нет записи в этом списке, оно отображается как обычное сообщение. 
+Если запись есть, но соответствующий файл изображения отсутствует, окно откроется без баннера.-->
+<Defs>
+ <HSK.Watcher.DeadSpace.LetterImageDef>
+    <defName>HSK_LetterImage_MarkerStrike</defName>
+    <letterKey>HSK_MarkerStrike</letterKey>
+    <imagePath>UI/Letters/HSK_MarkerStrike</imagePath>
+  </HSK.Watcher.DeadSpace.LetterImageDef>
+ 
+  <HSK.Watcher.DeadSpace.LetterImageDef>
+    <defName>HSK_LetterImage_InfectorOutbreak</defName>
+    <letterKey>HSK_InfectorOutbreak</letterKey>
+    <imagePath>UI/Letters/HSK_InfectorOutbreak</imagePath>
+  </HSK.Watcher.DeadSpace.LetterImageDef>
+  
+   <HSK.Watcher.DeadSpace.LetterImageDef>
+    <defName>HSK_LetterImage_MarkerImpact</defName>
+    <letterKey>HSK_MarkerImpact</letterKey>
+    <imagePath>UI/Letters/HSK_MarkerImpact</imagePath>
+  </HSK.Watcher.DeadSpace.LetterImageDef>
+  
+  <HSK.Watcher.DeadSpace.LetterImageDef>
+    <defName>HSK_LetterImage_MarkerUnity</defName>
+    <letterKey>HSK_MarkerUnityLabel</letterKey>
+    <imagePath>UI/Letters/HSK_MarkerUnity</imagePath>
+  </HSK.Watcher.DeadSpace.LetterImageDef>
+  
+  
+  <HSK.Watcher.DeadSpace.LetterImageDef>
+    <defName>HSK_LetterImage_Whispers</defName>
+    <letterKey>HSK_UnitologyWhispers</letterKey>
+    <imagePath>UI/Letters/HSK_Whispers</imagePath>
+  </HSK.Watcher.DeadSpace.LetterImageDef>
+<!--  <HSK.Watcher.DeadSpace.LetterImageDef>
+    <defName>HSK_LetterImage_MarkerStrikeDestroyed</defName>
+    <letterKey>HSK_MarkerStrike_DestroyedLabel</letterKey>
+    <imagePath>UI/Letters/HSK_MarkerStrike_Destroyed</imagePath>
+  </HSK.Watcher.DeadSpace.LetterImageDef>
+ 
+  <HSK.Watcher.DeadSpace.LetterImageDef>
+    <defName>HSK_LetterImage_MarkerWave</defName>
+    <letterKey>HSK_MarkerWaveLabel</letterKey>
+    <imagePath>UI/Letters/HSK_MarkerWave</imagePath>
+  </HSK.Watcher.DeadSpace.LetterImageDef>
+ 
+  <HSK.Watcher.DeadSpace.LetterImageDef>
+    <defName>HSK_LetterImage_MarkerUnity</defName>
+    <letterKey>HSK_MarkerUnityLabel</letterKey>
+    <imagePath>UI/Letters/HSK_MarkerUnity</imagePath>
+  </HSK.Watcher.DeadSpace.LetterImageDef>
+ 
+  <HSK.Watcher.DeadSpace.LetterImageDef>
+    <defName>HSK_LetterImage_Whispers</defName>
+    <letterKey>HSK_Whispers_Label</letterKey>
+    <imagePath>UI/Letters/HSK_Whispers</imagePath>
+  </HSK.Watcher.DeadSpace.LetterImageDef>-->
+</Defs>
