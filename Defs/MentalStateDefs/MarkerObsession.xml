@@ -24,4 +24,19 @@
     <baseCommonality>0.5</baseCommonality>
     <intensity>Minor</intensity>
   </MentalBreakDef>
+  
+   <MentalStateDef>
+    <defName>HSK_Confusion</defName>
+    <label>confusion</label>
+    <stateClass>MentalState</stateClass>
+    <workerClass>MentalStateWorker</workerClass>
+    <category>Misc</category>
+    <blockNormalThoughts>false</blockNormalThoughts>
+    <nameColor>(0.75, 0.55, 0.55)</nameColor>
+    <baseInspectLine>Mental state: confusion</baseInspectLine>
+    <recoveryMessage>{PAWN_nameDef} has come to their senses.</recoveryMessage>
+    <minTicksBeforeRecovery>2500</minTicksBeforeRecovery>
+    <maxTicksBeforeRecovery>7500</maxTicksBeforeRecovery>
+    <recoveryMtbDays>0.1</recoveryMtbDays>
+  </MentalStateDef>
 </Defs>

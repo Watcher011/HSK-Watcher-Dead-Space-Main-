@@ -56,4 +56,32 @@
       </subNodes>
     </thinkRoot>
   </ThinkTreeDef>
+  
+
+ 
+  <!-- Boss: casts ranged abilities at visible targets, walks toward the rest -->
+  <ThinkTreeDef>
+    <defName>HSK_ApotheosisMain</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+        <li Class="HSK.Watcher.DeadSpace.JobGiver_BossRanged">
+          <abilities>
+            <li>SludgeSpew</li>
+            <li>SpikeLaunch_Fingerspike</li>
+          </abilities>
+        </li>
+        <li Class="HSK.Watcher.DeadSpace.JobGiver_NecromorphHunt">
+          <priority>6</priority>
+        </li>
+        <li Class="JobGiver_AIFightEnemies">
+          <targetAcquireRadius>25</targetAcquireRadius>
+          <targetKeepRadius>30</targetKeepRadius>
+        </li>
+        <li Class="HSK.Watcher.DeadSpace.JobGiver_InfectorIdle"/>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
 </Defs>

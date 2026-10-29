@@ -7,5 +7,9 @@
   <HSK_MarkerObsession.recoveryMessage>{0} больше не одержим Маркером.</HSK_MarkerObsession.recoveryMessage>
   <HSK_MarkerObsession.baseInspectLine>Психическое состояние: одержимость Маркером</HSK_MarkerObsession.baseInspectLine>
 
+<HSK_Confusion.label>Помутнение</HSK_Confusion.label>
+<HSK_Confusion.recoveryMessage>{PAWN_nameDef} вырвался из забытья.</HSK_Confusion.recoveryMessage>
+<HSK_Confusion.baseInspectLine>Психическое состояние: помутнение</HSK_Confusion.baseInspectLine>
+
 
 </LanguageData>

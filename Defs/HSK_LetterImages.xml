@@ -35,27 +35,11 @@ imagePath — путь внутри папки Textures (без расширен
     <letterKey>HSK_UnitologyWhispers</letterKey>
     <imagePath>UI/Letters/HSK_Whispers</imagePath>
   </HSK.Watcher.DeadSpace.LetterImageDef>
-<!--  <HSK.Watcher.DeadSpace.LetterImageDef>
-    <defName>HSK_LetterImage_MarkerStrikeDestroyed</defName>
-    <letterKey>HSK_MarkerStrike_DestroyedLabel</letterKey>
-    <imagePath>UI/Letters/HSK_MarkerStrike_Destroyed</imagePath>
-  </HSK.Watcher.DeadSpace.LetterImageDef>
- 
+  
   <HSK.Watcher.DeadSpace.LetterImageDef>
-    <defName>HSK_LetterImage_MarkerWave</defName>
-    <letterKey>HSK_MarkerWaveLabel</letterKey>
-    <imagePath>UI/Letters/HSK_MarkerWave</imagePath>
+    <defName>HSK_LetterImage_Convergence</defName>
+    <letterKey>HSK_Convergence</letterKey>
+    <imagePath>UI/Letters/HSK_Convergence</imagePath>
   </HSK.Watcher.DeadSpace.LetterImageDef>
- 
-  <HSK.Watcher.DeadSpace.LetterImageDef>
-    <defName>HSK_LetterImage_MarkerUnity</defName>
-    <letterKey>HSK_MarkerUnityLabel</letterKey>
-    <imagePath>UI/Letters/HSK_MarkerUnity</imagePath>
-  </HSK.Watcher.DeadSpace.LetterImageDef>
- 
-  <HSK.Watcher.DeadSpace.LetterImageDef>
-    <defName>HSK_LetterImage_Whispers</defName>
-    <letterKey>HSK_Whispers_Label</letterKey>
-    <imagePath>UI/Letters/HSK_Whispers</imagePath>
-  </HSK.Watcher.DeadSpace.LetterImageDef>-->
+
 </Defs>

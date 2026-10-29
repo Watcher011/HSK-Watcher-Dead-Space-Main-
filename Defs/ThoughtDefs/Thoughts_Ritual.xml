@@ -49,4 +49,17 @@
       </li>
     </stages>
   </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>HSK_MakeUsOne</defName>
+    <durationDays>5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>make us one</label>
+        <description>The whisper at the gate has no end. It is calling me, and I am ready to join it.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 </Defs>

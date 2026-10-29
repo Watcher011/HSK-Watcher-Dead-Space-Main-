@@ -457,4 +457,176 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	
+	
+<ThingDef ParentName="BaseFleshbeast">
+		<defName>Apotheosis</defName>
+		<label>Apotheosis of the Flesh</label>
+		<description>The Marker does not give birth to warriors. It gathers the final sum. The Apotheosis of Flesh is not a creature, but a culmination: over a thousand bodies fused into one, compressed into a colossus the size of a colony—yet still a pathetic dwarf when set beside a Brethren Moon. There is nothing accidental about it. Every body has found its place: the arms of the dead hold it up like the buttresses of a cathedral; spines have woven themselves into load-bearing beams; and from a gaping chest, faces emerge—hundreds, thousands of faces that still remember their names, still move their lips, still whisper into a soundless chorus. It has no head. In its stead stands a gateway of ribs, and from this gate, a call seeps forth—a guiding thread stretched across the dead void toward a Brethren Moon. It does not pursue; it moves with slow deliberation, for it knows there is nowhere to run. Each of its steps cracks the earth and the mind alike; each breath is the chorus of those it has absorbed. It does not kill; it draws all into a singular union. Those who hear the whisper come to the gate of their own accord—smiling, laying down their weapons, calling it by name. The cosmos is silent not because it is empty, but because there is no one left—only cold, corpse-like stars and a darkness that hearkens to the call. The Apotheosis of Flesh is not the end. It is proof that there will be no end: every fallen soul becomes another knot in the thread, another voice in the chorus, another step taken by the Moon toward the last living world. It cannot be destroyed—only muffled for a time—and no one remembers how that is done. There is no hope. There is only the Apotheosis of the Flesh, and it is drawing near.</description>
+		<statBases>
+			<Flammability>0.2</Flammability>
+			<MoveSpeed>0.9</MoveSpeed>
+			<MinimumContainmentStrength>50</MinimumContainmentStrength>
+			<!-- CE: броня в мм RHA (острое) и МПа (тупое), а не в долях -->
+			<ArmorRating_Sharp>6000</ArmorRating_Sharp>
+			<ArmorRating_Blunt>10000</ArmorRating_Blunt>
+			<ToxicResistance>1</ToxicResistance>
+				<!-- no pain shock: the boss is never downed by pain -->
+				<PainShockThreshold>9999</PainShockThreshold>
+			<MeleeDodgeChance>1.8</MeleeDodgeChance>
+			<MeleeCritChance>1.6</MeleeCritChance>
+			<MeleeParryChance>1.2</MeleeParryChance>
+		</statBases>
+		<uiIconPath>Things/Pawn/Apotheosis/Apotheosis_MenuIcon</uiIconPath>
+		<race>
+			<body>Dreadmeld</body>
+            <baseBodySize>10</baseBodySize>
+			<baseHealthScale>10</baseHealthScale>
+			<lifeExpectancy>15</lifeExpectancy>
+			 <renderTree>Dreadmeld</renderTree>
+			 <deathAction Class="DeathActionProperties_Divide">
+        <divideBloodFilthCountRange>20~25</divideBloodFilthCountRange>
+        <dividePawnKindAdditionalForced>
+          <li>Lurker</li>
+          <li>Infector</li>
+          <li>Necromorphe</li>
+        </dividePawnKindAdditionalForced>
+      </deathAction>
+			<thinkTreeMain>HSK_ApotheosisMain</thinkTreeMain>
+			<thinkTreeConstant>FleshbeastConstant</thinkTreeConstant>
+			<canBecomeShambler>false</canBecomeShambler>
+			<lifeStageAges>
+				<li>
+					<def>FullyFormed_Toughspike</def>
+					<soundWounded>Pawn_Fleshbeast_Toughspike_Wounded</soundWounded>
+					<soundDeath>Pawn_Fleshbeast_Toughspike_Death</soundDeath>
+					<soundCall>Pawn_Fleshbeast_Toughspike_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_AttachPoints">
+				<points>
+					<li>
+						<offset>(-.35, 0, .5)</offset>
+						<type>PlatformRestraint0</type>
+					</li>
+					<li>
+						<offset>(.35, 0, .5)</offset>
+						<type>PlatformRestraint1</type>
+					</li>
+					<li>
+						<offset>(.3, 0, -.45)</offset>
+						<type>PlatformRestraint2</type>
+					</li>
+					<li>
+						<offset>(-.3, 0, -.45)</offset>
+						<type>PlatformRestraint3</type>
+					</li>
+				</points>
+			</li>
+			<li Class="CompProperties_ProducesBioferrite">
+				<bioferriteDensity>2</bioferriteDensity>
+			</li>
+				<li Class="CombatExtended.CompProperties_ArmorDurability">
+				<Durability>16250</Durability>
+				<Regenerates>true</Regenerates>
+				<RegenInterval>600</RegenInterval>
+				<RegenValue>500</RegenValue>
+				<MinArmorPct>0.75</MinArmorPct>
+			</li>
+				<!-- Dead Space: the boss destroys every building near it just by being there -->
+				<li Class="HSK.Watcher.DeadSpace.CompProperties_Crusher">
+					<radius>15</radius>
+					<intervalTicks>30</intervalTicks>
+					<damageFraction>0.35</damageFraction>
+					<minDamage>450</minDamage>
+					<!-- walls and other impassable buildings fall at once -->
+					<wallsInstantly>true</wallsInstantly>
+					<crushNaturalRock>false</crushNaturalRock>
+					<!-- everything alive in killRadius that is not of the boss faction dies -->
+					<killPawns>true</killPawns>
+					<killRadius>8</killRadius>
+					<!-- slime: any filth def; replace with a slime def if you have one -->
+					<filthDef>Filth_TwistedFlesh</filthDef>
+					<slimeRadius>15</slimeRadius>
+					<slimeIntervalTicks>60</slimeIntervalTicks>
+					<slimePerPulse>6</slimePerPulse>
+				</li>
+				<!-- damage immunity: only 1% of hits go through -->
+				<li Class="HSK.Watcher.DeadSpace.CompProperties_DamageImmunity">
+					<passChance>0.01</passChance>
+				</li>
+		</comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>left spike</label>
+				<labelNoLocation>spike</labelNoLocation>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>120</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftSpike</linkedBodyPartsGroup>
+				<armorPenetrationSharp>10.5</armorPenetrationSharp>
+				<armorPenetrationBlunt>40</armorPenetrationBlunt>
+				<soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>right spike</label>
+				<labelNoLocation>spike</labelNoLocation>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>120</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightSpike</linkedBodyPartsGroup>
+				<armorPenetrationSharp>10.5</armorPenetrationSharp>
+				<armorPenetrationBlunt>40</armorPenetrationBlunt>
+				<soundMeleeHit>Pawn_Fleshbeast_Attack_Spike</soundMeleeHit>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>50</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>20</armorPenetrationBlunt>
+				<soundMeleeHit>Pawn_Fleshbeast_Attack_Blunt</soundMeleeHit>
+			</li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef ParentName="BaseFleshbeastKind">
+		<defName>Apotheosis</defName>
+		<label>Apotheosis</label>
+		<race>Apotheosis</race>
+		<abilities>
+			<li>SludgeSpew</li>
+			<li>SpikeLaunch_Fingerspike</li>
+		</abilities>
+		<combatPower>7000</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Apotheosis/Apotheosis</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>15</drawSize>
+				</bodyGraphicData>
+				<silhouetteGraphicData>
+					<texPath>Things/Pawn/Apotheosis/Apotheosis_MenuIcon</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>15</drawSize>
+				</silhouetteGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 </Defs>

@@ -12,5 +12,11 @@
   <HSK_Altar_MarkerSmall.label>малый алтарь Маркера</HSK_Altar_MarkerSmall.label>
   <HSK_Altar_MarkerSmall.description>Миниатюрный чёрный Маркер, средоточие ритуалов юнитологов. Только последователи юнитологии могут его построить.</HSK_Altar_MarkerSmall.description>
 
+  <HSK_CECShuttleIncoming.label>Шаттл CEC (прибытие)</HSK_CECShuttleIncoming.label>
+<HSK_CECShuttleLeaving.label>Шаттл CEC (убытие)</HSK_CECShuttleLeaving.label>
+
+<HSK_CECShuttle.label>Шаттл CEC</HSK_CECShuttle.label>
+<HSK_CECShuttle.description>Приземлившийся штурмовой шаттл CEC. Штурмовая группа вернётся сюда, когда выполнит задачу.</HSK_CECShuttle.description>
+
 
 </LanguageData>
