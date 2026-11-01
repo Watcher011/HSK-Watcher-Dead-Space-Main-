@@ -27,9 +27,44 @@
 			<Bulk>0.15</Bulk>
 		</statBases>
 		<thingCategories>
+		    <li>SLDBar</li>
 			<li>RARBar</li>
 			<li>USLDHBar</li>
 		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>Markerite</stuffAdjective>
+			<appearance>Metal</appearance>
+			<categories>
+				<li>Metallic</li>
+				<li>StrongMetallic</li>
+				<li>RuggedMetallic</li>
+			</categories>
+			<constructEffect>ConstructMetal</constructEffect>
+			<commonality>1.0</commonality>
+			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+			<statFactors>
+				<MaxHitPoints>1.7</MaxHitPoints>
+				<Beauty>1.1</Beauty>
+				<Flammability>0</Flammability>
+				<WorkToMake>1.0</WorkToMake>
+				<WorkToBuild>1.0</WorkToBuild>
+				<DoorOpenSpeed>1.7</DoorOpenSpeed>
+				<MeleeWeapon_CooldownMultiplier>1.0</MeleeWeapon_CooldownMultiplier>
+				<MoveSpeed>0.8</MoveSpeed>
+				<MarketValue>0.7</MarketValue>
+				<BedRestEffectiveness>1.85</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1.95</ImmunityGainSpeedFactor>
+				<WorkTableWorkSpeedFactor>1.0</WorkTableWorkSpeedFactor>
+				<MeleePenetrationFactor>1.0</MeleePenetrationFactor>
+				<Mass>0.5</Mass>
+			</statFactors>
+			<color>(101,207,101)</color>
+			
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+		</stuffProps>
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
