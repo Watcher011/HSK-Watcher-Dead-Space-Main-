@@ -123,4 +123,12 @@
   <HSK_Convergence_Label>Восхождение</HSK_Convergence_Label>
   <HSK_Convergence_LetterText>На карте нет живых. Апофеоз Плоти стоит над колонией. В его груди хор. Теперь и последний. Братская Луна приняла жатву. «Сделай нас целым». Стала целой. Нить натянута. В этой тишине я понял: космос молчит не потому, что пуст. Он мёртв. Мы были последней нотой в его погребальном хоре. Я видел конец. Я принял. Слава Апофеозу. Но руки всё ещё дрожат.</HSK_Convergence_LetterText>
 
+
+<HSK_Unitology_Title>Реформация идеологии: Юнитология</HSK_Unitology_Title>
+  <HSK_Unitology_Desc>Изучение Черного маркера открыло вашим колонистам Истину. Выберите колонистов, которые примут новую идеологию — «{Юнитологию}»:</HSK_Unitology_Desc>
+  
+  <HSK_Unitology_Accept>Принять</HSK_Unitology_Accept>
+  <HSK_Unitology_Decline>Отказаться</HSK_Unitology_Decline>
+  <HSK_Unitology_Done>Идеологию «{1}» приняли колонисты: {0} чел.</HSK_Unitology_Done>
+  <HSK_UnitologyConverted>{0} поддался проповеди и разделил веру с {1}.</HSK_UnitologyConverted>
 </LanguageData>

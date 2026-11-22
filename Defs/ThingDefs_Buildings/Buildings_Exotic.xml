@@ -21,7 +21,7 @@
     </graphicData>
     <size>(3, 2)</size>
 	<minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>Building</altitudeLayer>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
     <passability>Impassable</passability>
     <blockWind>true</blockWind>
     <fillPercent>1</fillPercent>

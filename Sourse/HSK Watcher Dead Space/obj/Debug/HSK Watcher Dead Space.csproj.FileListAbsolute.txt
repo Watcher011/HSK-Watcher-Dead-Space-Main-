@@ -1,0 +1,9 @@
+C:\Users\----\Desktop\HSK Watcher Dead Space\HSK Watcher Dead Space\bin\Debug\HSK Watcher Dead Space.dll
+C:\Users\----\Desktop\HSK Watcher Dead Space\HSK Watcher Dead Space\bin\Debug\HSK Watcher Dead Space.pdb
+C:\Users\----\Desktop\HSK Watcher Dead Space\HSK Watcher Dead Space\obj\Debug\HSK Watcher Dead Space.csproj.AssemblyReference.cache
+C:\Users\----\Desktop\HSK Watcher Dead Space\HSK Watcher Dead Space\obj\Debug\HSK Watcher Dead Space.csproj.CoreCompileInputs.cache
+C:\Users\----\Desktop\HSK Watcher Dead Space\HSK Watcher Dead Space\obj\Debug\HSK Watcher Dead Space.dll
+C:\Users\----\Desktop\HSK Watcher Dead Space\HSK Watcher Dead Space\obj\Debug\HSK Watcher Dead Space.pdb
+C:\Users\----\Desktop\HSK Watcher Dead Space\HSK Watcher Dead Space\bin\Debug\UnityEngine.IMGUIModule.dll
+C:\Users\----\Desktop\HSK Watcher Dead Space\HSK Watcher Dead Space\bin\Debug\UnityEngine.TextRenderingModule.dll
+C:\Users\----\Desktop\HSK Watcher Dead Space\HSK Watcher Dead Space\obj\Debug\HSK Watc.829ADE31.Up2Date
