@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="ApparelIndustrialBase">
+<ThingDef ParentName="ApparelIndustrialBase">
 		<defName>Helmet_CEC</defName>
 		<label>Arcturus-Class Rig Helmet</label>
 		<description>A standard-issue engineering bay helmet from the Concordance Extraction Corporation. It features a triple-layered armored glass visor with polarization to protect against welding arcs and plasma flashes. Inside, a heads-up display (HUD) provides holographic readouts of oxygen levels and suit integrity.</description>
@@ -29,8 +29,8 @@
 			<WornBulk>0</WornBulk>
 			<EquipDelay>2.9</EquipDelay>
 			<Insulation_Heat>4</Insulation_Heat>
-			<Insulation_Cold>2</Insulation_Cold>
-			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<Insulation_Cold>14</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.80</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.35</StuffEffectMultiplierInsulation_Heat>
 			<StuffEffectMultiplierArmor>8.06</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>14.12</ArmorRating_Sharp>
@@ -133,9 +133,9 @@ Stasis modules are mounted on the forearms.</description>
 			<WornBulk>15</WornBulk>
 			<EquipDelay>11</EquipDelay>
 			<Insulation_Heat>4</Insulation_Heat>
-			<Insulation_Cold>2</Insulation_Cold>
-			 <StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
-             <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+			<Insulation_Cold>34</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
 			<StuffEffectMultiplierArmor>3.47</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>6.93</ArmorRating_Sharp>
 			<ArmorRating_Blunt>11.87</ArmorRating_Blunt>
